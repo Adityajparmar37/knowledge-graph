@@ -1,0 +1,55 @@
+- generic [ref=f32e3]:
+  - banner [ref=f32e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f32e5]
+    - paragraph [ref=f32e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+    - generic [ref=f32e7]:
+      - generic [ref=f32e8]:
+        - generic [ref=f32e9]: Search by code or description
+        - textbox "Search by code or description" [ref=f32e10]:
+          - /placeholder: e.g. NY-7.EE.1
+      - generic [ref=f32e11]:
+        - generic [ref=f32e12]: State
+        - combobox "State" [ref=f32e13]:
+          - option "All states" [selected]
+          - option "California"
+          - option "New York"
+      - generic [ref=f32e14]:
+        - generic [ref=f32e15]: Standard
+        - combobox "Standard" [ref=f32e16]:
+          - option "Choose a standard" [selected]
+          - option "NY-5.NF.1"
+          - option "NY-6.NS.1"
+          - option "NY-7.EE.1"
+          - option "NY-7.G.1"
+          - option "NY-8.EE.3"
+          - option "NY-8.G.1"
+          - option "NY-9.NQ.1"
+          - option "NY-9.SP.1"
+          - option "NY-10.F.1"
+          - option "CA-5.NF.1"
+          - option "CA-6.NS.1"
+          - option "CA-7.EE.1"
+          - option "CA-7.G.1"
+          - option "CA-8.EE.3"
+          - option "CA-8.G.1"
+          - option "CA-9.NQ.1"
+          - option "CA-9.SP.1"
+          - option "CA-10.F.1"
+      - generic [ref=f32e17]:
+        - generic [ref=f32e18]: Track a student
+        - list [ref=f32e19]:
+          - listitem [ref=f32e20]:
+            - button "None" [ref=f32e21] [cursor=pointer]
+          - listitem [ref=f32e22]:
+            - button "Alex Rivera" [ref=f32e23] [cursor=pointer]
+          - listitem [ref=f32e24]:
+            - button "Priya Nair" [ref=f32e25] [cursor=pointer]
+          - listitem [ref=f32e26]:
+            - button "Sam Okafor" [ref=f32e27] [cursor=pointer]
+  - generic [ref=f32e28]:
+    - generic [ref=f32e29]:
+      - heading "Standard Breakdown" [level=2] [ref=f32e31]
+      - generic [ref=f32e32]: Select a standard on the left to explore its breakdown.
+    - generic [ref=f32e33]:
+      - heading "Subject Detail" [level=2] [ref=f32e35]
+      - generic [ref=f32e36]: Click a subject in the middle panel to see its skill tree.

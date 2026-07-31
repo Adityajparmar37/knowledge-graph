@@ -9,8 +9,8 @@ import {
   COLOR_ACCENT_SUBJECT,
   COLOR_ACCENT_PASS,
   COLOR_ACCENT_FAIL,
+  COLOR_ACCENT_IMPROVE,
   COLOR_ACCENT_LINK,
-  COLOR_INK_MUTED,
   COLOR_PANEL_BORDER,
   COLOR_EDGE_DEFAULT,
   COLOR_PANEL,
@@ -193,7 +193,7 @@ export default function StandardGraph({
             'text-valign': 'center',
             'text-halign': 'center',
             'text-wrap': 'wrap',
-            'text-max-width': '86px',
+            'text-max-width': '74px',
             'font-size': 11,
             'font-weight': 600,
             width: 100,
@@ -237,7 +237,7 @@ export default function StandardGraph({
         },
         {
           selector: 'node[status = "unattempted"]',
-          style: { 'border-width': 3, 'border-color': COLOR_INK_MUTED, 'border-style': 'dashed' },
+          style: { 'border-width': 3, 'border-color': COLOR_ACCENT_IMPROVE, 'border-style': 'dashed' },
         },
         {
           selector: 'node[kind = "subject"].is-selected',
@@ -253,6 +253,7 @@ export default function StandardGraph({
             height: 124,
             'font-size': 12.5,
             'font-weight': 700,
+            'text-max-width': '92px',
           },
         },
         {
@@ -263,6 +264,7 @@ export default function StandardGraph({
             'font-family': 'JetBrains Mono, monospace',
             width: 112,
             height: 112,
+            'text-max-width': '82px',
           },
         },
         {

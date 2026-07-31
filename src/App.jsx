@@ -141,6 +141,23 @@ export default function App() {
             <div className="standard-selected-desc">{selectedStandard.description}</div>
           </div>
         )}
+
+        {activeView === 'explorer' && selectedStudentId && (
+          <ul className="status-legend">
+            <li>
+              <span className="status-legend-swatch status-legend-pass" />
+              Passed
+            </li>
+            <li>
+              <span className="status-legend-swatch status-legend-fail" />
+              Failed
+            </li>
+            <li>
+              <span className="status-legend-swatch status-legend-improve" />
+              Unattempted — room to improve
+            </li>
+          </ul>
+        )}
       </header>
 
       {activeView === 'nodeDetail' && detailNode ? (

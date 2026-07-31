@@ -19,6 +19,7 @@
   --color-accent-fail: #f87171;
   --color-accent-link: #fbbf24;
   --color-accent-link-text: #92400e;
+  --color-accent-improve: #a78bfa;
 
   /* Back-compat aliases used throughout this file so every rule below
      reads semantically without re-deriving the palette per-section. */
@@ -373,6 +374,46 @@ body {
   line-height: 1.5;
 }
 
+.status-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  list-style: none;
+  margin: 16px 0 0;
+  padding: 12px 0 0;
+  border-top: 1px solid var(--color-panel-border);
+  font-size: 12.5px;
+  color: var(--color-ink-muted);
+}
+
+.status-legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.status-legend-swatch {
+  width: 14px;
+  height: 14px;
+  border-radius: 999px;
+  border-width: 3px;
+  border-style: solid;
+  background: var(--color-panel);
+}
+
+.status-legend-pass {
+  border-color: var(--color-accent-pass);
+}
+
+.status-legend-fail {
+  border-color: var(--color-accent-fail);
+}
+
+.status-legend-improve {
+  border-color: var(--color-accent-improve);
+  border-style: dashed;
+}
+
 /* ---------- Student selector (left panel) ---------- */
 
 .student-selector {
@@ -696,8 +737,8 @@ body {
 }
 
 .node-detail-status-unattempted {
-  background: rgba(139, 148, 167, 0.16);
-  color: var(--color-ink-muted);
+  background: rgba(167, 139, 250, 0.16);
+  color: var(--color-accent-improve);
 }
 
 .node-detail-status-aside {

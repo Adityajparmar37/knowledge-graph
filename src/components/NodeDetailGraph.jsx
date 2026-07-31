@@ -90,9 +90,15 @@ function buildElements(detail) {
     addEdge(id, item.id, 'parent', label);
   });
 
+  const CHILD_LABEL_BY_KIND = {
+    subject: 'has subject',
+    skill: 'has skill',
+    subskill: 'has sub-skill',
+  };
+
   children.forEach((item) => {
     addNode(item);
-    addEdge(id, item.id, 'child', 'has child');
+    addEdge(id, item.id, 'child', CHILD_LABEL_BY_KIND[item.kind] || 'has child');
   });
 
   prerequisites.forEach((item) => {
@@ -167,8 +173,8 @@ export default function NodeDetailGraph({ detail, onNavigate }) {
             'text-valign': 'center',
             'text-halign': 'center',
             'text-wrap': 'wrap',
-            'text-max-width': '78px',
-            'font-size': 10.5,
+            'text-max-width': '62px',
+            'font-size': 10,
             'font-weight': 600,
             width: 84,
             height: 84,
@@ -199,9 +205,9 @@ export default function NodeDetailGraph({ detail, onNavigate }) {
           style: {
             width: 128,
             height: 128,
-            'font-size': 13,
+            'font-size': 12,
             'font-weight': 700,
-            'text-max-width': '108px',
+            'text-max-width': '92px',
             'border-width': 4,
             'border-color': COLOR_ACCENT_LINK,
             'z-index': 20,

@@ -11,8 +11,8 @@ import {
   COLOR_ACCENT_SUBJECT,
   COLOR_ACCENT_PASS,
   COLOR_ACCENT_FAIL,
+  COLOR_ACCENT_IMPROVE,
   COLOR_ACCENT_LINK,
-  COLOR_INK_MUTED,
   COLOR_PANEL_BORDER,
   COLOR_EDGE_DEFAULT,
   COLOR_PANEL,
@@ -205,7 +205,7 @@ export default function SubjectSkillGraph({
             'text-valign': 'center',
             'text-halign': 'center',
             'text-wrap': 'wrap',
-            'text-max-width': '84px',
+            'text-max-width': '70px',
             'font-size': 10.5,
             'font-weight': 600,
             width: 96,
@@ -224,6 +224,7 @@ export default function SubjectSkillGraph({
             height: 116,
             'font-size': 12,
             'font-weight': 700,
+            'text-max-width': '86px',
           },
         },
         {
@@ -241,7 +242,8 @@ export default function SubjectSkillGraph({
             'text-outline-color': KIND_OUTLINE_COLOR.subskill,
             width: 82,
             height: 82,
-            'font-size': 10,
+            'font-size': 9.5,
+            'text-max-width': '58px',
           },
         },
         {
@@ -254,7 +256,7 @@ export default function SubjectSkillGraph({
         },
         {
           selector: 'node[status = "unattempted"]',
-          style: { 'border-width': 3, 'border-color': COLOR_INK_MUTED, 'border-style': 'dashed' },
+          style: { 'border-width': 3, 'border-color': COLOR_ACCENT_IMPROVE, 'border-style': 'dashed' },
         },
         {
           selector: 'node[kind = "skill"].is-active, node[kind = "subskill"].is-active',

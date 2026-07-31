@@ -34,6 +34,8 @@ export const COLOR_ACCENT_SUBSKILL = '#86EFAC';
 export const COLOR_ACCENT_PASS = '#34D399';
 export const COLOR_ACCENT_FAIL = '#F87171';
 export const COLOR_ACCENT_LINK = '#FBBF24';
+/** Purple — marks an unattempted node: not failed yet, but room to improve. */
+export const COLOR_ACCENT_IMPROVE = '#A78BFA';
 
 export const KIND_COLOR = {
   standard: COLOR_ACCENT_STANDARD,
