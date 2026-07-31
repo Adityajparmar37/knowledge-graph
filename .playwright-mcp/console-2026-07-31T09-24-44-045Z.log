@@ -1,0 +1,130 @@
+[      77ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:21550
+[  671037ms] ReferenceError: expandedSkillId is not defined
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490555041:227:18)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3674:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3699:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3733:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19765:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+[  671038ms] ReferenceError: expandedSkillId is not defined
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490555041:227:18)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3674:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3699:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3733:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19765:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+[  671038ms] [ERROR] The above error occurred in the <SubjectSkillGraph> component:
+
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490555041:84:45)
+    at section
+    at div
+    at div
+    at App (http://localhost:5173/src/App.jsx?t=1785490472528:27:55)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14031
+[  671038ms] ReferenceError: expandedSkillId is not defined
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490555041:227:18)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19753:22)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19116:15)
+    at recoverFromConcurrentError (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:18736:28)
+    at performSyncWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:18879:28)
+[  686262ms] ReferenceError: expandedSkillId is not defined
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490570270:256:18)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3674:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3699:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3733:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19765:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+[  686262ms] ReferenceError: expandedSkillId is not defined
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490570270:256:18)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3674:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3699:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3733:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19765:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+[  686263ms] [ERROR] The above error occurred in the <SubjectSkillGraph> component:
+
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490570270:84:45)
+    at section
+    at div
+    at div
+    at App (http://localhost:5173/src/App.jsx?t=1785490472528:27:55)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14031
+[  686263ms] ReferenceError: expandedSkillId is not defined
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490570270:256:18)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19753:22)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19116:15)
+    at recoverFromConcurrentError (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:18736:28)
+    at performSyncWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:18879:28)
+[  692409ms] ReferenceError: expandedSkillId is not defined
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490576419:266:18)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3674:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3699:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3733:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19765:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+[  692409ms] ReferenceError: expandedSkillId is not defined
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490576419:266:18)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3674:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3699:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3733:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19765:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+[  692409ms] [ERROR] The above error occurred in the <SubjectSkillGraph> component:
+
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490576419:84:45)
+    at section
+    at div
+    at div
+    at App (http://localhost:5173/src/App.jsx?t=1785490472528:27:55)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14031
+[  692409ms] ReferenceError: expandedSkillId is not defined
+    at SubjectSkillGraph (http://localhost:5173/src/components/SubjectSkillGraph.jsx?t=1785490576419:266:18)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19753:22)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19116:15)
+    at recoverFromConcurrentError (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:18736:28)
+    at performSyncWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:18879:28)

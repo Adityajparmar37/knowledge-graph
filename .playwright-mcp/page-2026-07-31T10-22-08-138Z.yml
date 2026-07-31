@@ -1,0 +1,52 @@
+- generic [ref=f4e3]:
+  - banner [ref=f4e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f4e5]
+    - paragraph [ref=f4e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+  - generic [ref=f4e93]:
+    - button "← Back to explorer" [ref=f4e94] [cursor=pointer]
+    - banner [ref=f4e95]:
+      - generic [ref=f4e96]:
+        - generic [ref=f4e97]: Skill / Sub-skill
+        - generic [ref=f4e98]: Grade 7
+      - heading "Subtracting terms" [level=2] [ref=f4e143]
+    - generic [ref=f4e100]:
+      - heading "Full record" [level=3] [ref=f4e101]
+      - generic [ref=f4e102]:
+        - generic [ref=f4e103]:
+          - term [ref=f4e104]: Sub-skills
+          - definition [ref=f4e105]: "0"
+        - generic [ref=f4e106]:
+          - term [ref=f4e107]: Worked example
+          - definition [ref=f4e108]: 10 - 1 = 9
+        - generic [ref=f4e109]:
+          - term [ref=f4e110]: Pass criteria
+          - definition [ref=f4e111]:
+            - list [ref=f4e112]:
+              - listitem [ref=f4e113]: Subtract two like terms and keep the correct sign
+    - generic [ref=f4e115]:
+      - heading "Domain & cluster context" [level=3] [ref=f4e116]
+      - paragraph [ref=f4e117]:
+        - generic [ref=f4e118]: "Domain:"
+        - text: Expressions & Equations
+      - list [ref=f4e119]:
+        - listitem [ref=f4e120]:
+          - generic [ref=f4e121]: "Cluster (NY-7.EE.1):"
+          - text: Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships.
+    - generic [ref=f4e122]:
+      - heading "Parent chain" [level=3] [ref=f4e123]
+      - generic [ref=f4e124]:
+        - button "Combining like terms" [ref=f4e144] [cursor=pointer]
+        - button "Algebra" [ref=f4e125] [cursor=pointer]
+        - button "NY-7.EE.1" [ref=f4e126] [cursor=pointer]
+    - generic [ref=f4e127]:
+      - heading "Children" [level=3] [ref=f4e128]
+      - paragraph [ref=f4e145]: No child nodes.
+    - generic [ref=f4e134]:
+      - heading "Prerequisites" [level=3] [ref=f4e135]
+      - paragraph [ref=f4e136]: No prerequisite skills recorded.
+    - generic [ref=f4e137]:
+      - heading "Cross-grade link" [level=3] [ref=f4e138]
+      - paragraph [ref=f4e139]: Links to
+      - button "Operating with positive and negative integers" [ref=f4e147] [cursor=pointer]
+      - paragraph [ref=f4e141]: Linked from (other grades)
+      - paragraph [ref=f4e142]: No other skill links into this one.

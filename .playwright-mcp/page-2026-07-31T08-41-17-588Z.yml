@@ -1,0 +1,59 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Standards + Skills Knowledge Graph" [level=1] [ref=e5]
+    - paragraph [ref=e6]: Work through a standard's skills, mark mastery, and progress through the standards chain — or use quick lookup to inspect any standard or skill.
+  - generic [ref=e7]:
+    - main [ref=e8]:
+      - generic [ref=e9]:
+        - heading "Mastery path" [level=2] [ref=e10]
+        - generic [ref=e11]:
+          - generic [ref=e12]: Standard 1
+          - combobox [ref=e13]:
+            - option "Select a standard..."
+            - option "NY-7.EE.1 (Grade 7) — Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships." [selected]
+            - option "NY-8.EE.3 (Grade 8) — Use numbers expressed in the form of a single digit times an integer power of 10 to estimate very large or very small quantities, and express how many times as much one is than the other."
+            - option "NY-9.NQ.1 (Grade 9) — Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas, and interpret units of quantities expressed in scientific notation."
+          - generic [ref=e19]:
+            - generic [ref=e26]:
+              - strong [ref=e27]: Mark skills as mastered
+              - list [ref=e28]:
+                - listitem [ref=e29]:
+                  - generic [ref=e30] [cursor=pointer]:
+                    - checkbox "Combining like terms" [checked] [ref=e31]
+                    - text: Combining like terms
+                - listitem [ref=e32]:
+                  - generic [ref=e33] [cursor=pointer]:
+                    - checkbox "Applying the distributive property" [checked] [ref=e34]
+                    - text: Applying the distributive property
+                - listitem [ref=e35]:
+                  - generic [ref=e36] [cursor=pointer]:
+                    - checkbox "Generating equivalent expressions" [checked] [ref=e37]
+                    - text: Generating equivalent expressions
+                - listitem [ref=e38]:
+                  - generic [ref=e39] [cursor=pointer]:
+                    - checkbox "Computing unit rates" [checked] [ref=e40]
+                    - text: Computing unit rates
+                - listitem [ref=e41]:
+                  - generic [ref=e42] [cursor=pointer]:
+                    - checkbox "Identifying proportional relationships" [checked] [ref=e43]
+                    - text: Identifying proportional relationships
+                - listitem [ref=e44]:
+                  - generic [ref=e45] [cursor=pointer]:
+                    - checkbox "Graphing proportional relationships" [checked] [ref=e46]
+                    - text: Graphing proportional relationships
+            - paragraph [ref=e47]: All skills mastered for this standard.
+          - generic [ref=e48]:
+            - generic [ref=e49]: Standard 2
+            - combobox [ref=e50]:
+              - option "Select a standard..." [selected]
+              - option "NY-8.EE.3 (Grade 8) — Use numbers expressed in the form of a single digit times an integer power of 10 to estimate very large or very small quantities, and express how many times as much one is than the other."
+      - generic [ref=e14]:
+        - button "Hide quick lookup" [active] [ref=e51]
+        - generic [ref=e52]:
+          - heading "Quick lookup" [level=2] [ref=e53]
+          - generic [ref=e55]:
+            - textbox "Search a standard code or skill name..." [ref=e56]
+            - button "Search" [ref=e57]
+    - complementary [ref=e16]:
+      - heading "Skill detail" [level=2] [ref=e17]
+      - generic [ref=e18]: Select a skill node to see its pass criteria.

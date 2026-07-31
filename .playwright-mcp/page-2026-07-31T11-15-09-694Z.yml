@@ -1,0 +1,86 @@
+- generic [ref=f18e3]:
+  - banner [ref=f18e4]:
+    - generic [ref=f18e5]:
+      - generic [ref=f18e6]:
+        - heading "Standards & Skills Explorer" [level=1] [ref=f18e7]
+        - paragraph [ref=f18e8]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+      - generic [ref=f18e9]:
+        - generic [ref=f18e10]:
+          - generic [ref=f18e11]: State
+          - combobox "State" [ref=f18e12]:
+            - option "All states" [selected]
+            - option "California"
+            - option "New York"
+        - generic [ref=f18e13]:
+          - generic [ref=f18e14]: Track a student
+          - list [ref=f18e15]:
+            - listitem [ref=f18e16]:
+              - button "None" [ref=f18e17] [cursor=pointer]
+            - listitem [ref=f18e18]:
+              - button "Alex Rivera" [ref=f18e19] [cursor=pointer]
+            - listitem [ref=f18e20]:
+              - button "Priya Nair" [ref=f18e21] [cursor=pointer]
+            - listitem [ref=f18e22]:
+              - button "Sam Okafor" [ref=f18e23] [cursor=pointer]
+  - generic [ref=f18e24]:
+    - generic [ref=f18e25]:
+      - heading "Select Standard" [level=2] [ref=f18e26]
+      - generic [ref=f18e27]:
+        - generic [ref=f18e28]:
+          - generic [ref=f18e29]: Search by code or description
+          - textbox "Search by code or description" [ref=f18e30]:
+            - /placeholder: e.g. NY-7.EE.1
+        - generic [ref=f18e31]:
+          - generic [ref=f18e32]: All standards
+          - list [ref=f18e33]:
+            - listitem [ref=f18e34]:
+              - button "NY-5.NF.1" [ref=f18e35] [cursor=pointer]
+            - listitem [ref=f18e36]:
+              - button "NY-6.NS.1" [ref=f18e37] [cursor=pointer]
+            - listitem [ref=f18e38]:
+              - button "NY-7.EE.1" [active] [ref=f18e39] [cursor=pointer]
+            - listitem [ref=f18e40]:
+              - button "NY-7.G.1" [ref=f18e41] [cursor=pointer]
+            - listitem [ref=f18e42]:
+              - button "NY-8.EE.3" [ref=f18e43] [cursor=pointer]
+            - listitem [ref=f18e44]:
+              - button "NY-8.G.1" [ref=f18e45] [cursor=pointer]
+            - listitem [ref=f18e46]:
+              - button "NY-9.NQ.1" [ref=f18e47] [cursor=pointer]
+            - listitem [ref=f18e48]:
+              - button "NY-9.SP.1" [ref=f18e49] [cursor=pointer]
+            - listitem [ref=f18e50]:
+              - button "NY-10.F.1" [ref=f18e51] [cursor=pointer]
+            - listitem [ref=f18e52]:
+              - button "CA-5.NF.1" [ref=f18e53] [cursor=pointer]
+            - listitem [ref=f18e54]:
+              - button "CA-6.NS.1" [ref=f18e55] [cursor=pointer]
+            - listitem [ref=f18e56]:
+              - button "CA-7.EE.1" [ref=f18e57] [cursor=pointer]
+            - listitem [ref=f18e58]:
+              - button "CA-7.G.1" [ref=f18e59] [cursor=pointer]
+            - listitem [ref=f18e60]:
+              - button "CA-8.EE.3" [ref=f18e61] [cursor=pointer]
+            - listitem [ref=f18e62]:
+              - button "CA-8.G.1" [ref=f18e63] [cursor=pointer]
+            - listitem [ref=f18e64]:
+              - button "CA-9.NQ.1" [ref=f18e65] [cursor=pointer]
+            - listitem [ref=f18e66]:
+              - button "CA-9.SP.1" [ref=f18e67] [cursor=pointer]
+            - listitem [ref=f18e68]:
+              - button "CA-10.F.1" [ref=f18e69] [cursor=pointer]
+        - generic [ref=f18e76]:
+          - generic [ref=f18e77]: NY-7.EE.1
+          - generic [ref=f18e78]: Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships.
+    - generic [ref=f18e70]:
+      - heading "Standard Breakdown" [level=2] [ref=f18e71]
+      - generic [ref=f18e72]:
+        - generic [ref=f18e86]:
+          - button "Zoom in" [ref=f18e87] [cursor=pointer]: +
+          - button "Zoom out" [ref=f18e88] [cursor=pointer]: −
+          - button "Reset zoom and fit" [ref=f18e89] [cursor=pointer]: ⤢
+          - button "Rotate graph 90 degrees" [ref=f18e90] [cursor=pointer]: ⟳
+        - paragraph [ref=f18e91]: Click the standard to reveal its subjects, then click "Subjects" to fan them out and see what this standard builds toward. Click a subject to explore its skills on the right.
+    - generic [ref=f18e73]:
+      - heading "Subject Detail" [level=2] [ref=f18e74]
+      - generic [ref=f18e75]: Click a subject in the middle panel to see its skill tree.

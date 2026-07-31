@@ -1,0 +1,182 @@
+[
+  {
+    "id": "NY-5.NF.1",
+    "code": "NY-5.NF.1",
+    "jurisdiction": "New York",
+    "grade": 5,
+    "description": "Use equivalent fractions as a strategy to add, subtract, multiply, and divide fractions and mixed numbers, laying the foundation for the number-system work that begins in grade 6.",
+    "buildsToward": ["NY-6.NS.1"],
+    "buildsFrom": [],
+    "subjectIds": ["subj-fractions"]
+  },
+  {
+    "id": "NY-6.NS.1",
+    "code": "NY-6.NS.1",
+    "jurisdiction": "New York",
+    "grade": 6,
+    "description": "Apply and extend understanding of arithmetic to positive and negative numbers, building the number-system fluency that algebraic reasoning in later grades depends on.",
+    "buildsToward": ["NY-7.EE.1", "NY-7.G.1"],
+    "buildsFrom": ["NY-5.NF.1"],
+    "subjectIds": ["subj-number-fluency"]
+  },
+  {
+    "id": "NY-7.EE.1",
+    "code": "NY-7.EE.1",
+    "jurisdiction": "New York",
+    "grade": 7,
+    "description": "Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships.",
+    "buildsToward": ["NY-8.EE.3"],
+    "buildsFrom": ["NY-6.NS.1"],
+    "subjectIds": ["subj-algebra", "subj-proportional-reasoning"]
+  },
+  {
+    "id": "NY-7.G.1",
+    "code": "NY-7.G.1",
+    "jurisdiction": "New York",
+    "grade": 7,
+    "description": "Solve problems involving scale drawings, angle relationships, and the area and circumference of circles, extending geometric reasoning alongside grade 7's algebraic work.",
+    "buildsToward": ["NY-8.G.1"],
+    "buildsFrom": ["NY-6.NS.1"],
+    "subjectIds": ["subj-geometry-figures"]
+  },
+  {
+    "id": "NY-8.EE.3",
+    "code": "NY-8.EE.3",
+    "jurisdiction": "New York",
+    "grade": 8,
+    "description": "Use numbers expressed in the form of a single digit times an integer power of 10 to estimate very large or very small quantities, and express how many times as much one is than the other.",
+    "buildsToward": ["NY-9.NQ.1"],
+    "buildsFrom": ["NY-7.EE.1"],
+    "subjectIds": ["subj-exponents", "subj-number-sense"]
+  },
+  {
+    "id": "NY-8.G.1",
+    "code": "NY-8.G.1",
+    "jurisdiction": "New York",
+    "grade": 8,
+    "description": "Verify experimentally the properties of rotations, reflections, and dilations, and use the Pythagorean theorem to determine congruence, similarity, and unknown side lengths.",
+    "buildsToward": ["NY-9.SP.1"],
+    "buildsFrom": ["NY-7.G.1"],
+    "subjectIds": ["subj-geometry-transformations"]
+  },
+  {
+    "id": "NY-9.NQ.1",
+    "code": "NY-9.NQ.1",
+    "jurisdiction": "New York",
+    "grade": 9,
+    "description": "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas, and interpret units of quantities expressed in scientific notation.",
+    "buildsToward": ["NY-10.F.1"],
+    "buildsFrom": ["NY-8.EE.3"],
+    "subjectIds": ["subj-measurement", "subj-number-sense"]
+  },
+  {
+    "id": "NY-9.SP.1",
+    "code": "NY-9.SP.1",
+    "jurisdiction": "New York",
+    "grade": 9,
+    "description": "Summarize, represent, and interpret data on a single count or measurement variable and on two categorical or quantitative variables, distinguishing correlation from causation.",
+    "buildsToward": ["NY-10.F.1"],
+    "buildsFrom": ["NY-8.G.1"],
+    "subjectIds": ["subj-data-analysis"]
+  },
+  {
+    "id": "NY-10.F.1",
+    "code": "NY-10.F.1",
+    "jurisdiction": "New York",
+    "grade": 10,
+    "description": "Understand functions as rules that assign a unique output to each input, and analyze linear functions and their graphical transformations using function notation.",
+    "buildsToward": [],
+    "buildsFrom": ["NY-9.NQ.1", "NY-9.SP.1"],
+    "subjectIds": ["subj-functions"]
+  },
+  {
+    "id": "CA-5.NF.1",
+    "code": "CA-5.NF.1",
+    "jurisdiction": "California",
+    "grade": 5,
+    "description": "Use equivalent fractions as a strategy to add, subtract, multiply, and divide fractions and mixed numbers, laying the foundation for the number-system work that begins in grade 6.",
+    "buildsToward": ["CA-6.NS.1"],
+    "buildsFrom": [],
+    "subjectIds": ["subj-fractions"]
+  },
+  {
+    "id": "CA-6.NS.1",
+    "code": "CA-6.NS.1",
+    "jurisdiction": "California",
+    "grade": 6,
+    "description": "Apply and extend understanding of arithmetic to positive and negative numbers, building the number-system fluency that algebraic reasoning in later grades depends on.",
+    "buildsToward": ["CA-7.EE.1", "CA-7.G.1"],
+    "buildsFrom": ["CA-5.NF.1"],
+    "subjectIds": ["subj-number-fluency"]
+  },
+  {
+    "id": "CA-7.EE.1",
+    "code": "CA-7.EE.1",
+    "jurisdiction": "California",
+    "grade": 7,
+    "description": "Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships.",
+    "buildsToward": ["CA-8.EE.3"],
+    "buildsFrom": ["CA-6.NS.1"],
+    "subjectIds": ["subj-algebra", "subj-proportional-reasoning"]
+  },
+  {
+    "id": "CA-7.G.1",
+    "code": "CA-7.G.1",
+    "jurisdiction": "California",
+    "grade": 7,
+    "description": "Solve problems involving scale drawings, angle relationships, and the area and circumference of circles, extending geometric reasoning alongside grade 7's algebraic work.",
+    "buildsToward": ["CA-8.G.1"],
+    "buildsFrom": ["CA-6.NS.1"],
+    "subjectIds": ["subj-geometry-figures"]
+  },
+  {
+    "id": "CA-8.EE.3",
+    "code": "CA-8.EE.3",
+    "jurisdiction": "California",
+    "grade": 8,
+    "description": "Use numbers expressed in the form of a single digit times an integer power of 10 to estimate very large or very small quantities, and express how many times as much one is than the other.",
+    "buildsToward": ["CA-9.NQ.1"],
+    "buildsFrom": ["CA-7.EE.1"],
+    "subjectIds": ["subj-exponents", "subj-number-sense"]
+  },
+  {
+    "id": "CA-8.G.1",
+    "code": "CA-8.G.1",
+    "jurisdiction": "California",
+    "grade": 8,
+    "description": "Verify experimentally the properties of rotations, reflections, and dilations, and use the Pythagorean theorem to determine congruence, similarity, and unknown side lengths.",
+    "buildsToward": ["CA-9.SP.1"],
+    "buildsFrom": ["CA-7.G.1"],
+    "subjectIds": ["subj-geometry-transformations"]
+  },
+  {
+    "id": "CA-9.NQ.1",
+    "code": "CA-9.NQ.1",
+    "jurisdiction": "California",
+    "grade": 9,
+    "description": "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas, and interpret units of quantities expressed in scientific notation.",
+    "buildsToward": ["CA-10.F.1"],
+    "buildsFrom": ["CA-8.EE.3"],
+    "subjectIds": ["subj-measurement", "subj-number-sense"]
+  },
+  {
+    "id": "CA-9.SP.1",
+    "code": "CA-9.SP.1",
+    "jurisdiction": "California",
+    "grade": 9,
+    "description": "Summarize, represent, and interpret data on a single count or measurement variable and on two categorical or quantitative variables, distinguishing correlation from causation.",
+    "buildsToward": ["CA-10.F.1"],
+    "buildsFrom": ["CA-8.G.1"],
+    "subjectIds": ["subj-data-analysis"]
+  },
+  {
+    "id": "CA-10.F.1",
+    "code": "CA-10.F.1",
+    "jurisdiction": "California",
+    "grade": 10,
+    "description": "Understand functions as rules that assign a unique output to each input, and analyze linear functions and their graphical transformations using function notation.",
+    "buildsToward": [],
+    "buildsFrom": ["CA-9.NQ.1", "CA-9.SP.1"],
+    "subjectIds": ["subj-functions"]
+  }
+]

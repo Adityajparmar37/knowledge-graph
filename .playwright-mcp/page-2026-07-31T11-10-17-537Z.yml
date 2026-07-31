@@ -1,0 +1,74 @@
+- generic [ref=f14e3]:
+  - banner [ref=f14e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f14e5]
+    - paragraph [ref=f14e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+  - generic [ref=f14e7]:
+    - generic [ref=f14e8]:
+      - heading "Select Standard" [level=2] [ref=f14e9]
+      - generic [ref=f14e10]:
+        - generic [ref=f14e11]:
+          - generic [ref=f14e12]: State
+          - combobox "State" [ref=f14e13]:
+            - option "All states" [selected]
+            - option "California"
+            - option "New York"
+        - generic [ref=f14e14]:
+          - generic [ref=f14e15]: Search by code or description
+          - textbox "Search by code or description" [ref=f14e16]:
+            - /placeholder: e.g. NY-7.EE.1
+        - generic [ref=f14e17]:
+          - generic [ref=f14e18]: All standards
+          - list [ref=f14e19]:
+            - listitem [ref=f14e20]:
+              - button "NY-5.NF.1" [ref=f14e21] [cursor=pointer]
+            - listitem [ref=f14e22]:
+              - button "NY-6.NS.1" [ref=f14e23] [cursor=pointer]
+            - listitem [ref=f14e24]:
+              - button "NY-7.EE.1" [ref=f14e25] [cursor=pointer]
+            - listitem [ref=f14e26]:
+              - button "NY-7.G.1" [ref=f14e27] [cursor=pointer]
+            - listitem [ref=f14e28]:
+              - button "NY-8.EE.3" [ref=f14e29] [cursor=pointer]
+            - listitem [ref=f14e30]:
+              - button "NY-8.G.1" [ref=f14e31] [cursor=pointer]
+            - listitem [ref=f14e32]:
+              - button "NY-9.NQ.1" [ref=f14e33] [cursor=pointer]
+            - listitem [ref=f14e34]:
+              - button "NY-9.SP.1" [ref=f14e35] [cursor=pointer]
+            - listitem [ref=f14e36]:
+              - button "NY-10.F.1" [ref=f14e37] [cursor=pointer]
+            - listitem [ref=f14e38]:
+              - button "CA-5.NF.1" [ref=f14e39] [cursor=pointer]
+            - listitem [ref=f14e40]:
+              - button "CA-6.NS.1" [ref=f14e41] [cursor=pointer]
+            - listitem [ref=f14e42]:
+              - button "CA-7.EE.1" [ref=f14e43] [cursor=pointer]
+            - listitem [ref=f14e44]:
+              - button "CA-7.G.1" [ref=f14e45] [cursor=pointer]
+            - listitem [ref=f14e46]:
+              - button "CA-8.EE.3" [ref=f14e47] [cursor=pointer]
+            - listitem [ref=f14e48]:
+              - button "CA-8.G.1" [ref=f14e49] [cursor=pointer]
+            - listitem [ref=f14e50]:
+              - button "CA-9.NQ.1" [ref=f14e51] [cursor=pointer]
+            - listitem [ref=f14e52]:
+              - button "CA-9.SP.1" [ref=f14e53] [cursor=pointer]
+            - listitem [ref=f14e54]:
+              - button "CA-10.F.1" [ref=f14e55] [cursor=pointer]
+      - generic [ref=f14e56]:
+        - generic [ref=f14e57]: Track a student
+        - list [ref=f14e58]:
+          - listitem [ref=f14e59]:
+            - button "None" [ref=f14e60] [cursor=pointer]
+          - listitem [ref=f14e61]:
+            - button "Alex Rivera" [ref=f14e62] [cursor=pointer]
+          - listitem [ref=f14e63]:
+            - button "Priya Nair" [ref=f14e64] [cursor=pointer]
+          - listitem [ref=f14e65]:
+            - button "Sam Okafor" [ref=f14e66] [cursor=pointer]
+    - generic [ref=f14e67]:
+      - heading "Standard Breakdown" [level=2] [ref=f14e68]
+      - generic [ref=f14e69]: Select a standard on the left to explore its breakdown.
+    - generic [ref=f14e70]:
+      - heading "Subject Detail" [level=2] [ref=f14e71]
+      - generic [ref=f14e72]: Click a subject in the middle panel to see its skill tree.

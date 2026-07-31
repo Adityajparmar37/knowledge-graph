@@ -1,0 +1,40 @@
+- generic [ref=f4e3]:
+  - banner [ref=f4e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f4e5]
+    - paragraph [ref=f4e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+  - generic [ref=f4e7]:
+    - generic [ref=f4e8]:
+      - heading "Select Standard" [level=2] [ref=f4e9]
+      - generic [ref=f4e10]:
+        - generic [ref=f4e11]:
+          - generic [ref=f4e12]: Search by code or description
+          - textbox "Search by code or description" [ref=f4e13]:
+            - /placeholder: e.g. NY-7.EE.1
+        - generic [ref=f4e14]:
+          - generic [ref=f4e15]: All standards
+          - list [ref=f4e16]:
+            - listitem [ref=f4e17]:
+              - button "NY-6.NS.1" [ref=f4e18] [cursor=pointer]
+            - listitem [ref=f4e19]:
+              - button "NY-7.EE.1" [ref=f4e20] [cursor=pointer]
+            - listitem [ref=f4e21]:
+              - button "NY-8.EE.3" [ref=f4e22] [cursor=pointer]
+            - listitem [ref=f4e23]:
+              - button "NY-9.NQ.1" [ref=f4e24] [cursor=pointer]
+      - generic [ref=f4e25]:
+        - generic [ref=f4e26]: Track a student
+        - list [ref=f4e27]:
+          - listitem [ref=f4e28]:
+            - button "None" [ref=f4e29] [cursor=pointer]
+          - listitem [ref=f4e30]:
+            - button "Alex Rivera" [ref=f4e31] [cursor=pointer]
+          - listitem [ref=f4e32]:
+            - button "Priya Nair" [ref=f4e33] [cursor=pointer]
+          - listitem [ref=f4e34]:
+            - button "Sam Okafor" [ref=f4e35] [cursor=pointer]
+    - generic [ref=f4e36]:
+      - heading "Standard Breakdown" [level=2] [ref=f4e37]
+      - generic [ref=f4e38]: Select a standard on the left to explore its breakdown.
+    - generic [ref=f4e39]:
+      - heading "Subject Detail" [level=2] [ref=f4e40]
+      - generic [ref=f4e41]: Click a subject in the middle panel to see its skill tree.

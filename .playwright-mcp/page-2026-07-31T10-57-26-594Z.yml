@@ -1,0 +1,59 @@
+- generic [ref=f9e3]:
+  - banner [ref=f9e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f9e5]
+    - paragraph [ref=f9e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+  - generic [ref=f9e7]:
+    - generic [ref=f9e8]:
+      - heading "Select Standard" [level=2] [ref=f9e9]
+      - generic [ref=f9e10]:
+        - generic [ref=f9e11]:
+          - generic [ref=f9e12]: Search by code or description
+          - textbox "Search by code or description" [ref=f9e13]:
+            - /placeholder: e.g. NY-7.EE.1
+        - generic [ref=f9e14]:
+          - generic [ref=f9e15]: All standards
+          - list [ref=f9e16]:
+            - listitem [ref=f9e17]:
+              - button "NY-5.NF.1" [ref=f9e18] [cursor=pointer]
+            - listitem [ref=f9e19]:
+              - button "NY-6.NS.1" [ref=f9e20] [cursor=pointer]
+            - listitem [ref=f9e21]:
+              - button "NY-7.EE.1" [ref=f9e22] [cursor=pointer]
+            - listitem [ref=f9e23]:
+              - button "NY-7.G.1" [ref=f9e24] [cursor=pointer]
+            - listitem [ref=f9e25]:
+              - button "NY-8.EE.3" [active] [ref=f9e26] [cursor=pointer]
+            - listitem [ref=f9e27]:
+              - button "NY-8.G.1" [ref=f9e28] [cursor=pointer]
+            - listitem [ref=f9e29]:
+              - button "NY-9.NQ.1" [ref=f9e30] [cursor=pointer]
+            - listitem [ref=f9e31]:
+              - button "NY-9.SP.1" [ref=f9e32] [cursor=pointer]
+            - listitem [ref=f9e33]:
+              - button "NY-10.F.1" [ref=f9e34] [cursor=pointer]
+        - generic [ref=f9e52]:
+          - generic [ref=f9e53]: NY-8.EE.3
+          - generic [ref=f9e54]: Use numbers expressed in the form of a single digit times an integer power of 10 to estimate very large or very small quantities, and express how many times as much one is than the other.
+      - generic [ref=f9e35]:
+        - generic [ref=f9e36]: Track a student
+        - list [ref=f9e37]:
+          - listitem [ref=f9e38]:
+            - button "None" [ref=f9e39] [cursor=pointer]
+          - listitem [ref=f9e40]:
+            - button "Alex Rivera" [ref=f9e41] [cursor=pointer]
+          - listitem [ref=f9e42]:
+            - button "Priya Nair" [ref=f9e43] [cursor=pointer]
+          - listitem [ref=f9e44]:
+            - button "Sam Okafor" [ref=f9e45] [cursor=pointer]
+    - generic [ref=f9e46]:
+      - heading "Standard Breakdown" [level=2] [ref=f9e47]
+      - generic [ref=f9e48]:
+        - generic [ref=f9e62]:
+          - button "Zoom in" [ref=f9e63] [cursor=pointer]: +
+          - button "Zoom out" [ref=f9e64] [cursor=pointer]: −
+          - button "Reset zoom and fit" [ref=f9e65] [cursor=pointer]: ⤢
+          - button "Rotate graph 90 degrees" [ref=f9e66] [cursor=pointer]: ⟳
+        - paragraph [ref=f9e67]: Click the standard to reveal its subjects, then click "Subjects" to fan them out and see what this standard builds toward. Click a subject to explore its skills on the right.
+    - generic [ref=f9e49]:
+      - heading "Subject Detail" [level=2] [ref=f9e50]
+      - generic [ref=f9e51]: Click a subject in the middle panel to see its skill tree.

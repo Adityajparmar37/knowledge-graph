@@ -1,0 +1,56 @@
+- generic [ref=f4e3]:
+  - banner [ref=f4e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f4e5]
+    - paragraph [ref=f4e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+  - generic [ref=f4e93]:
+    - button "← Back to explorer" [ref=f4e94] [cursor=pointer]
+    - banner [ref=f4e95]:
+      - generic [ref=f4e96]:
+        - generic [ref=f4e97]: Skill / Sub-skill
+        - generic [ref=f4e98]: Grade 7
+      - heading "Combining like terms" [level=2] [ref=f4e99]
+    - generic [ref=f4e100]:
+      - heading "Full record" [level=3] [ref=f4e101]
+      - generic [ref=f4e102]:
+        - generic [ref=f4e103]:
+          - term [ref=f4e104]: Sub-skills
+          - definition [ref=f4e105]: "4"
+        - generic [ref=f4e106]:
+          - term [ref=f4e107]: Worked example
+          - definition [ref=f4e108]: 3x + 5x - 2 = 8x - 2
+        - generic [ref=f4e109]:
+          - term [ref=f4e110]: Pass criteria
+          - definition [ref=f4e111]:
+            - list [ref=f4e112]:
+              - listitem [ref=f4e113]: Simplify a linear expression with rational coefficients by combining like terms with 90%+ accuracy
+              - listitem [ref=f4e114]: Identify like terms across variables and constants in a multi-term expression
+    - generic [ref=f4e115]:
+      - heading "Domain & cluster context" [level=3] [ref=f4e116]
+      - paragraph [ref=f4e117]:
+        - generic [ref=f4e118]: "Domain:"
+        - text: Expressions & Equations
+      - list [ref=f4e119]:
+        - listitem [ref=f4e120]:
+          - generic [ref=f4e121]: "Cluster (NY-7.EE.1):"
+          - text: Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships.
+    - generic [ref=f4e122]:
+      - heading "Parent chain" [level=3] [ref=f4e123]
+      - generic [ref=f4e124]:
+        - button "Algebra" [ref=f4e125] [cursor=pointer]
+        - button "NY-7.EE.1" [ref=f4e126] [cursor=pointer]
+    - generic [ref=f4e127]:
+      - heading "Children" [level=3] [ref=f4e128]
+      - generic [ref=f4e129]:
+        - button "Subtracting terms" [ref=f4e130] [cursor=pointer]
+        - button "Adding terms" [ref=f4e131] [cursor=pointer]
+        - button "Multiplying terms" [ref=f4e132] [cursor=pointer]
+        - button "Dividing terms" [ref=f4e133] [cursor=pointer]
+    - generic [ref=f4e134]:
+      - heading "Prerequisites" [level=3] [ref=f4e135]
+      - paragraph [ref=f4e136]: No prerequisite skills recorded.
+    - generic [ref=f4e137]:
+      - heading "Cross-grade link" [level=3] [ref=f4e138]
+      - paragraph [ref=f4e139]: Links to
+      - paragraph [ref=f4e140]: This skill doesn't link to another grade.
+      - paragraph [ref=f4e141]: Linked from (other grades)
+      - paragraph [ref=f4e142]: No other skill links into this one.

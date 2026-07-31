@@ -1,0 +1,48 @@
+[      52ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:21550
+[  108059ms] ReferenceError: states is not defined
+    at StandardSelector (http://localhost:5173/src/components/StandardSelector.jsx?t=1785496325478:72:13)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3674:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3699:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3733:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19765:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+[  108060ms] ReferenceError: states is not defined
+    at StandardSelector (http://localhost:5173/src/components/StandardSelector.jsx?t=1785496325478:72:13)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at HTMLUnknownElement.callCallback2 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3674:22)
+    at Object.invokeGuardedCallbackDev (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3699:24)
+    at invokeGuardedCallback (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:3733:39)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19765:15)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+[  108061ms] [ERROR] The above error occurred in the <StandardSelector> component:
+
+    at StandardSelector (http://localhost:5173/src/components/StandardSelector.jsx?t=1785496325478:20:44)
+    at section
+    at div
+    at div
+    at App (http://localhost:5173/src/App.jsx?t=1785496185304:28:55)
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://reactjs.org/link/error-boundaries to learn more about error boundaries. @ http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14031
+[  108061ms] ReferenceError: states is not defined
+    at StandardSelector (http://localhost:5173/src/components/StandardSelector.jsx?t=1785496325478:72:13)
+    at renderWithHooks (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:11548:26)
+    at mountIndeterminateComponent (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:14926:21)
+    at beginWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:15914:22)
+    at beginWork$1 (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19753:22)
+    at performUnitOfWork (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19198:20)
+    at workLoopSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19137:13)
+    at renderRootSync (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:19116:15)
+    at recoverFromConcurrentError (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:18736:28)
+    at performSyncWorkOnRoot (http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:18879:28)
+[  198789ms] [ERROR] WebSocket connection to 'ws://localhost:5173/?token=64NuOWDvZkDy' failed:  @ http://localhost:5173/@vite/client:535
+[  198789ms] [LOG] [vite] server connection lost. Polling for restart... @ http://localhost:5173/@vite/client:559
+[  199801ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_REFUSED @ http://localhost:5173/:0
+[  201078ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:5173/node_modules/.vite/deps/chunk-ZFBEYDM4.js?v=b5ab7bed:21550

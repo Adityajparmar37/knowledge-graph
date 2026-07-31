@@ -1,0 +1,112 @@
+[
+  {
+    "id": "subj-number-fluency",
+    "name": "Number Fluency",
+    "domain": "The Number System",
+    "skillIds": [
+      "skill-basic-arithmetic-fluency",
+      "skill-integer-operations"
+    ]
+  },
+  {
+    "id": "subj-algebra",
+    "name": "Algebra",
+    "domain": "Expressions & Equations",
+    "skillIds": [
+      "skill-combine-like-terms",
+      "skill-distributive-property",
+      "skill-equivalent-expressions"
+    ]
+  },
+  {
+    "id": "subj-proportional-reasoning",
+    "name": "Proportional Reasoning",
+    "domain": "Ratios & Proportional Relationships",
+    "skillIds": [
+      "skill-unit-rate",
+      "skill-proportional-relationships",
+      "skill-graphing-proportions"
+    ]
+  },
+  {
+    "id": "subj-exponents",
+    "name": "Exponents & Powers",
+    "domain": "Expressions & Equations",
+    "skillIds": [
+      "skill-exponent-rules",
+      "skill-scientific-notation",
+      "skill-order-of-magnitude"
+    ]
+  },
+  {
+    "id": "subj-number-sense",
+    "name": "Number Sense",
+    "domain": "The Number System",
+    "skillIds": [
+      "skill-place-value",
+      "skill-rational-irrational",
+      "skill-significant-figures",
+      "skill-number-line-estimation"
+    ]
+  },
+  {
+    "id": "subj-measurement",
+    "name": "Measurement & Units",
+    "domain": "Quantities",
+    "skillIds": [
+      "skill-unit-analysis",
+      "skill-unit-conversion",
+      "skill-precision-measurement"
+    ]
+  },
+  {
+    "id": "subj-fractions",
+    "name": "Fractions",
+    "domain": "Number & Operations—Fractions",
+    "skillIds": [
+      "skill-fraction-equivalence",
+      "skill-fraction-operations",
+      "skill-mixed-numbers"
+    ]
+  },
+  {
+    "id": "subj-geometry-figures",
+    "name": "Geometric Figures",
+    "domain": "Geometry",
+    "skillIds": [
+      "skill-scale-drawings",
+      "skill-angle-relationships",
+      "skill-area-circle"
+    ]
+  },
+  {
+    "id": "subj-geometry-transformations",
+    "name": "Transformations & Congruence",
+    "domain": "Geometry",
+    "skillIds": [
+      "skill-transformations",
+      "skill-congruence-similarity",
+      "skill-pythagorean-theorem"
+    ]
+  },
+  {
+    "id": "subj-data-analysis",
+    "name": "Data Analysis",
+    "domain": "Statistics & Probability",
+    "skillIds": [
+      "skill-data-distributions",
+      "skill-scatter-plots",
+      "skill-correlation-causation"
+    ]
+  },
+  {
+    "id": "subj-functions",
+    "name": "Functions",
+    "domain": "Functions",
+    "skillIds": [
+      "skill-function-notation",
+      "skill-linear-functions",
+      "skill-function-transformations"
+    ]
+  }
+]

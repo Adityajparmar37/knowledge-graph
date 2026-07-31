@@ -1,0 +1,36 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f1e5]
+    - paragraph [ref=f1e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria.
+  - generic [ref=f1e7]:
+    - generic [ref=f1e8]:
+      - heading "Select Standard" [level=2] [ref=f1e9]
+      - generic [ref=f1e10]:
+        - generic [ref=f1e11]:
+          - generic [ref=f1e12]: Search by code or description
+          - textbox "Search by code or description" [ref=f1e13]:
+            - /placeholder: e.g. NY-7.EE.1
+        - generic [ref=f1e14]:
+          - generic [ref=f1e15]: All standards
+          - list [ref=f1e16]:
+            - listitem [ref=f1e17]:
+              - button "NY-7.EE.1" [ref=f1e18] [cursor=pointer]
+            - listitem [ref=f1e19]:
+              - button "NY-8.EE.3" [ref=f1e20] [cursor=pointer]
+            - listitem [ref=f1e21]:
+              - button "NY-9.NQ.1" [ref=f1e22] [cursor=pointer]
+        - generic [ref=f1e29]:
+          - generic [ref=f1e30]: NY-7.EE.1
+          - generic [ref=f1e31]: Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships.
+    - generic [ref=f1e23]:
+      - heading "Standard Breakdown" [level=2] [ref=f1e24]
+      - generic [ref=f1e25]:
+        - generic [ref=f1e39]:
+          - button "Zoom in" [ref=f1e40] [cursor=pointer]: +
+          - button "Zoom out" [ref=f1e41] [cursor=pointer]: −
+          - button "Reset zoom and fit" [ref=f1e42] [cursor=pointer]: ⤢
+          - button "Rotate graph 90 degrees" [active] [ref=f1e43] [cursor=pointer]: ⟳
+        - paragraph [ref=f1e44]: Click the standard to reveal its subjects, then click "Subjects" to fan them out and see what this standard builds toward. Click a subject to explore its skills on the right.
+    - generic [ref=f1e26]:
+      - heading "Subject Detail" [level=2] [ref=f1e27]
+      - generic [ref=f1e28]: Click a subject in the middle panel to see its skill tree.

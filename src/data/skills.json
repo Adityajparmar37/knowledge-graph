@@ -1,0 +1,485 @@
+[
+  {
+    "id": "skill-basic-arithmetic-fluency",
+    "name": "Basic arithmetic fluency",
+    "passCriteria": [
+      "Add, subtract, multiply, and divide multi-digit whole numbers accurately and efficiently"
+    ],
+    "example": "347 + 189 = 536",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-integer-operations",
+    "name": "Operating with positive and negative integers",
+    "passCriteria": [
+      "Add, subtract, multiply, and divide integers including negative values"
+    ],
+    "example": "-4 + 7 = 3",
+    "prerequisiteSkillIds": ["skill-basic-arithmetic-fluency"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-combine-like-terms",
+    "name": "Combining like terms",
+    "passCriteria": [
+      "Simplify a linear expression with rational coefficients by combining like terms with 90%+ accuracy",
+      "Identify like terms across variables and constants in a multi-term expression"
+    ],
+    "example": "3x + 5x - 2 = 8x - 2",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": [
+      "subskill-combine-subtract",
+      "subskill-combine-add",
+      "subskill-combine-multiply",
+      "subskill-combine-divide"
+    ]
+  },
+  {
+    "id": "subskill-combine-subtract",
+    "name": "Subtracting terms",
+    "passCriteria": ["Subtract two like terms and keep the correct sign"],
+    "example": "10 - 1 = 9",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": [],
+    "linkedSkillId": "skill-integer-operations"
+  },
+  {
+    "id": "subskill-combine-add",
+    "name": "Adding terms",
+    "passCriteria": ["Add two like terms and combine coefficients correctly"],
+    "example": "4x + 3x = 7x",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "subskill-combine-multiply",
+    "name": "Multiplying terms",
+    "passCriteria": ["Multiply coefficients and apply exponent rules to variables"],
+    "example": "2x * 3x = 6x^2",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "subskill-combine-divide",
+    "name": "Dividing terms",
+    "passCriteria": ["Divide coefficients and apply exponent rules to variables"],
+    "example": "6x^2 / 2x = 3x",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-distributive-property",
+    "name": "Applying the distributive property",
+    "passCriteria": [
+      "Expand an expression of the form a(b + c) correctly on 9/10 practice items",
+      "Factor out a common factor from a two-term expression"
+    ],
+    "example": "3(x + 4) = 3x + 12",
+    "prerequisiteSkillIds": ["skill-combine-like-terms"],
+    "subSkillIds": [
+      "subskill-distribute-expand",
+      "subskill-distribute-factor"
+    ]
+  },
+  {
+    "id": "subskill-distribute-expand",
+    "name": "Expanding an expression",
+    "passCriteria": ["Multiply the outer term into every term inside the parentheses"],
+    "example": "2(x - 5) = 2x - 10",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "subskill-distribute-factor",
+    "name": "Factoring out a common factor",
+    "passCriteria": ["Identify and pull out the greatest common factor from each term"],
+    "example": "4x + 8 = 4(x + 2)",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-equivalent-expressions",
+    "name": "Generating equivalent expressions",
+    "passCriteria": [
+      "Produce at least two equivalent forms of a given linear expression",
+      "Verify equivalence of two expressions by substitution"
+    ],
+    "example": "2(x + 3) = 2x + 6",
+    "prerequisiteSkillIds": ["skill-distributive-property", "skill-combine-like-terms"],
+    "subSkillIds": [],
+    "linkedSkillId": "skill-integer-operations"
+  },
+  {
+    "id": "skill-unit-rate",
+    "name": "Computing unit rates",
+    "passCriteria": [
+      "Calculate a unit rate from a ratio of two quantities with different units",
+      "Compare two unit rates to determine the better value"
+    ],
+    "example": "60 miles / 2 hours = 30 mph",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-proportional-relationships",
+    "name": "Identifying proportional relationships",
+    "passCriteria": [
+      "Determine whether a table, equation, or graph represents a proportional relationship",
+      "Identify the constant of proportionality from a table or equation"
+    ],
+    "example": "y = 4x is proportional; constant of proportionality is 4",
+    "prerequisiteSkillIds": ["skill-unit-rate"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-graphing-proportions",
+    "name": "Graphing proportional relationships",
+    "passCriteria": [
+      "Plot a proportional relationship as a line through the origin",
+      "Read the constant of proportionality as the slope of the graphed line"
+    ],
+    "example": "y = 2x passes through (0,0) and (1,2)",
+    "prerequisiteSkillIds": ["skill-proportional-relationships"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-exponent-rules",
+    "name": "Applying integer exponent rules",
+    "passCriteria": [
+      "Apply product, quotient, and power rules for integer exponents with 90%+ accuracy",
+      "Simplify an expression involving a zero or negative exponent"
+    ],
+    "example": "x^3 * x^2 = x^5",
+    "prerequisiteSkillIds": ["skill-place-value"],
+    "subSkillIds": [],
+    "linkedSkillId": "skill-equivalent-expressions"
+  },
+  {
+    "id": "skill-scientific-notation",
+    "name": "Scientific notation conversion",
+    "passCriteria": [
+      "Convert a number between standard and scientific notation with 90%+ accuracy",
+      "Compare magnitudes of two numbers in scientific notation"
+    ],
+    "example": "45,000 = 4.5 x 10^4",
+    "prerequisiteSkillIds": ["skill-exponent-rules", "skill-place-value"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-order-of-magnitude",
+    "name": "Comparing orders of magnitude",
+    "passCriteria": [
+      "State how many times as much one quantity is as another using powers of 10",
+      "Estimate the order of magnitude of a real-world quantity"
+    ],
+    "example": "3 x 10^5 is 10 times as much as 3 x 10^4",
+    "prerequisiteSkillIds": ["skill-scientific-notation"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-place-value",
+    "name": "Place value understanding",
+    "passCriteria": [
+      "Identify the value of a digit in a multi-digit or decimal number",
+      "Round a number to a specified place value"
+    ],
+    "example": "In 4,382 the 3 is worth 300",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-rational-irrational",
+    "name": "Distinguishing rational and irrational numbers",
+    "passCriteria": [
+      "Classify a given number as rational or irrational",
+      "Approximate the value of an irrational number on a number line"
+    ],
+    "example": "sqrt(2) is irrational; 1/2 is rational",
+    "prerequisiteSkillIds": ["skill-place-value"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-significant-figures",
+    "name": "Working with significant figures",
+    "passCriteria": [
+      "Identify the number of significant figures in a measured quantity",
+      "Round a calculated result to the correct number of significant figures"
+    ],
+    "example": "3.20 cm has 3 significant figures",
+    "prerequisiteSkillIds": ["skill-place-value"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-number-line-estimation",
+    "name": "Estimating on a number line",
+    "passCriteria": [
+      "Place a given number in its approximate position on a number line",
+      "Estimate the sum or difference of two numbers using number line reasoning"
+    ],
+    "example": "4.8 sits just before 5 on the number line",
+    "prerequisiteSkillIds": ["skill-place-value"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-unit-analysis",
+    "name": "Dimensional (unit) analysis",
+    "passCriteria": [
+      "Use unit analysis to check that a multi-step calculation produces the correct resulting unit",
+      "Set up a chain of conversion factors to cancel unwanted units"
+    ],
+    "example": "60 mi/hr * 2 hr = 120 mi",
+    "prerequisiteSkillIds": ["skill-scientific-notation", "skill-significant-figures"],
+    "subSkillIds": [],
+    "linkedSkillId": "skill-scientific-notation"
+  },
+  {
+    "id": "skill-unit-conversion",
+    "name": "Converting between units",
+    "passCriteria": [
+      "Convert a quantity between two units within the same measurement system with 90%+ accuracy",
+      "Convert a quantity between metric and customary units using a given conversion factor"
+    ],
+    "example": "5 km = 5000 m",
+    "prerequisiteSkillIds": ["skill-unit-analysis"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-precision-measurement",
+    "name": "Reporting measurement precision",
+    "passCriteria": [
+      "Report a measured value with precision appropriate to the measuring tool",
+      "Explain how precision limits the certainty of a calculated result"
+    ],
+    "example": "A ruler marked in mm reports lengths to the nearest 0.1 cm",
+    "prerequisiteSkillIds": ["skill-significant-figures"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-fraction-equivalence",
+    "name": "Identifying equivalent fractions",
+    "passCriteria": [
+      "Determine whether two fractions represent the same value",
+      "Generate an equivalent fraction using multiplication or division"
+    ],
+    "example": "2/3 = 4/6",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-fraction-operations",
+    "name": "Adding, subtracting, multiplying, and dividing fractions",
+    "passCriteria": [
+      "Add and subtract fractions with unlike denominators with 90%+ accuracy",
+      "Multiply and divide fractions and mixed numbers correctly"
+    ],
+    "example": "1/2 + 1/3 = 5/6",
+    "prerequisiteSkillIds": ["skill-fraction-equivalence"],
+    "subSkillIds": ["subskill-fraction-add-subtract", "subskill-fraction-multiply-divide"]
+  },
+  {
+    "id": "subskill-fraction-add-subtract",
+    "name": "Adding and subtracting fractions",
+    "passCriteria": ["Find a common denominator and add or subtract the numerators"],
+    "example": "1/4 + 1/2 = 3/4",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "subskill-fraction-multiply-divide",
+    "name": "Multiplying and dividing fractions",
+    "passCriteria": ["Multiply numerators and denominators directly, or multiply by a reciprocal to divide"],
+    "example": "2/3 / 1/2 = 4/3",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-mixed-numbers",
+    "name": "Converting between mixed numbers and improper fractions",
+    "passCriteria": [
+      "Convert a mixed number to an improper fraction and back",
+      "Add or subtract mixed numbers by first converting to improper fractions"
+    ],
+    "example": "1 3/4 = 7/4",
+    "prerequisiteSkillIds": ["skill-fraction-equivalence"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-scale-drawings",
+    "name": "Interpreting scale drawings",
+    "passCriteria": [
+      "Compute actual lengths and areas from a scale drawing given its scale factor",
+      "Reproduce a scale drawing at a different scale"
+    ],
+    "example": "A map with scale 1 in = 10 mi shows 3 in between two towns, so the actual distance is 30 mi",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": [],
+    "linkedSkillId": "skill-proportional-relationships"
+  },
+  {
+    "id": "skill-angle-relationships",
+    "name": "Using angle relationships to solve for unknown angles",
+    "passCriteria": [
+      "Identify complementary, supplementary, vertical, and adjacent angles",
+      "Write and solve an equation for an unknown angle from a figure"
+    ],
+    "example": "Two supplementary angles: x + 65 = 180, so x = 115",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-area-circle",
+    "name": "Finding the area and circumference of a circle",
+    "passCriteria": [
+      "Compute the circumference of a circle given its radius or diameter",
+      "Compute the area of a circle given its radius or diameter"
+    ],
+    "example": "A circle with radius 3 has area 9 * pi, about 28.3",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-transformations",
+    "name": "Performing translations, reflections, and rotations",
+    "passCriteria": [
+      "Apply a given translation, reflection, or rotation to a figure on the coordinate plane",
+      "Describe the transformation that maps one figure onto another"
+    ],
+    "example": "Reflecting (2,3) over the y-axis gives (-2,3)",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": ["subskill-translation-reflection", "subskill-rotation", "subskill-dilation"]
+  },
+  {
+    "id": "subskill-translation-reflection",
+    "name": "Translating and reflecting a figure",
+    "passCriteria": ["Slide or flip a figure across a line without changing its size or shape"],
+    "example": "Translating (1,1) by (3,-2) gives (4,-1)",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "subskill-rotation",
+    "name": "Rotating a figure about a point",
+    "passCriteria": ["Rotate a figure 90, 180, or 270 degrees about the origin or another point"],
+    "example": "Rotating (2,0) by 90 degrees about the origin gives (0,2)",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": [],
+    "linkedSkillId": "skill-angle-relationships"
+  },
+  {
+    "id": "subskill-dilation",
+    "name": "Dilating a figure from a center point",
+    "passCriteria": ["Scale a figure by a given factor from a center of dilation"],
+    "example": "Dilating (2,2) by a factor of 3 from the origin gives (6,6)",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-congruence-similarity",
+    "name": "Determining congruence and similarity of figures",
+    "passCriteria": [
+      "Determine whether two figures are congruent using a sequence of rigid transformations",
+      "Determine whether two figures are similar using a sequence of transformations and dilations"
+    ],
+    "example": "Two triangles are similar if one maps to the other by a rotation and a dilation",
+    "prerequisiteSkillIds": ["skill-transformations"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-pythagorean-theorem",
+    "name": "Applying the Pythagorean theorem",
+    "passCriteria": [
+      "Find the length of a missing side of a right triangle given the other two sides",
+      "Apply the Pythagorean theorem to find the distance between two points on a coordinate plane"
+    ],
+    "example": "3^2 + 4^2 = 5^2, so the hypotenuse is 5",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": [],
+    "linkedSkillId": "skill-exponent-rules"
+  },
+  {
+    "id": "skill-data-distributions",
+    "name": "Describing the shape, center, and spread of a data distribution",
+    "passCriteria": [
+      "Identify the shape of a distribution from a histogram or dot plot",
+      "Choose an appropriate measure of center and spread for a given distribution"
+    ],
+    "example": "A right-skewed distribution has its mean pulled higher than its median",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": ["subskill-mean-median-mode", "subskill-spread-measures"]
+  },
+  {
+    "id": "subskill-mean-median-mode",
+    "name": "Calculating mean, median, and mode",
+    "passCriteria": ["Compute the mean, median, and mode of a data set"],
+    "example": "The data set 2,3,3,5,7 has median 3 and mean 4",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": [],
+    "linkedSkillId": "skill-place-value"
+  },
+  {
+    "id": "subskill-spread-measures",
+    "name": "Calculating range and interquartile range",
+    "passCriteria": ["Compute the range and interquartile range of a data set"],
+    "example": "The data set 2,3,3,5,7 has a range of 5",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-scatter-plots",
+    "name": "Constructing and interpreting scatter plots",
+    "passCriteria": [
+      "Plot bivariate data as a scatter plot",
+      "Describe the association shown by a scatter plot as positive, negative, or none"
+    ],
+    "example": "A scatter plot of study hours vs. test score shows a positive association",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": [],
+    "linkedSkillId": "skill-graphing-proportions"
+  },
+  {
+    "id": "skill-correlation-causation",
+    "name": "Distinguishing correlation from causation",
+    "passCriteria": [
+      "Fit a linear model to a scatter plot and interpret its slope and intercept",
+      "Explain why a strong correlation does not by itself establish causation"
+    ],
+    "example": "Ice cream sales and drowning rates correlate, but hot weather causes both",
+    "prerequisiteSkillIds": ["skill-scatter-plots"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-function-notation",
+    "name": "Using function notation",
+    "passCriteria": [
+      "Evaluate a function for a given input using function notation",
+      "Interpret f(x) in context as the output value for a given input"
+    ],
+    "example": "If f(x) = 2x + 1, then f(3) = 7",
+    "prerequisiteSkillIds": [],
+    "subSkillIds": [],
+    "linkedSkillId": "skill-proportional-relationships"
+  },
+  {
+    "id": "skill-linear-functions",
+    "name": "Analyzing linear functions",
+    "passCriteria": [
+      "Identify slope and y-intercept from a linear function's equation, table, or graph",
+      "Write the equation of a linear function given two points or a point and a slope"
+    ],
+    "example": "f(x) = 3x - 2 has slope 3 and y-intercept -2",
+    "prerequisiteSkillIds": ["skill-function-notation"],
+    "subSkillIds": []
+  },
+  {
+    "id": "skill-function-transformations",
+    "name": "Identifying transformations of function graphs",
+    "passCriteria": [
+      "Describe how a function's graph shifts, stretches, or reflects when a constant is added, multiplied, or made negative",
+      "Sketch the graph of a transformed function given its parent function"
+    ],
+    "example": "f(x) + 3 shifts the graph of f(x) up 3 units",
+    "prerequisiteSkillIds": ["skill-linear-functions"],
+    "subSkillIds": []
+  }
+]

@@ -1,0 +1,129 @@
+{
+  "student-alex": {
+    "skill-combine-like-terms": "fail",
+    "subskill-combine-subtract": "fail",
+    "subskill-combine-add": "pass",
+    "subskill-combine-multiply": "pass",
+    "skill-distributive-property": "pass",
+    "skill-equivalent-expressions": "pass",
+
+    "skill-unit-rate": "pass",
+    "skill-proportional-relationships": "fail",
+    "skill-graphing-proportions": "pass",
+
+    "skill-exponent-rules": "pass",
+    "skill-scientific-notation": "fail",
+    "skill-order-of-magnitude": "pass",
+
+    "skill-place-value": "pass",
+    "skill-rational-irrational": "pass",
+    "skill-significant-figures": "fail",
+    "skill-number-line-estimation": "pass",
+
+    "skill-unit-analysis": "fail",
+    "skill-unit-conversion": "fail",
+    "skill-precision-measurement": "pass",
+
+    "skill-fraction-equivalence": "pass",
+    "skill-fraction-operations": "pass",
+    "subskill-fraction-add-subtract": "pass",
+    "subskill-fraction-multiply-divide": "pass",
+    "skill-mixed-numbers": "pass",
+
+    "skill-scale-drawings": "pass",
+    "skill-angle-relationships": "fail",
+    "skill-area-circle": "pass",
+
+    "skill-transformations": "fail",
+    "subskill-translation-reflection": "pass",
+    "subskill-rotation": "fail",
+    "subskill-dilation": "pass",
+    "skill-congruence-similarity": "fail",
+    "skill-pythagorean-theorem": "pass",
+
+    "skill-data-distributions": "pass",
+    "subskill-mean-median-mode": "pass",
+    "subskill-spread-measures": "pass",
+    "skill-scatter-plots": "pass",
+    "skill-correlation-causation": "fail",
+
+    "skill-function-notation": "pass",
+    "skill-linear-functions": "pass",
+    "skill-function-transformations": "fail"
+  },
+  "student-priya": {
+    "skill-combine-like-terms": "pass",
+    "subskill-combine-subtract": "pass",
+    "subskill-combine-add": "pass",
+    "subskill-combine-multiply": "pass",
+    "subskill-combine-divide": "pass",
+    "skill-distributive-property": "pass",
+    "skill-equivalent-expressions": "pass",
+
+    "skill-unit-rate": "pass",
+    "skill-proportional-relationships": "pass",
+    "skill-graphing-proportions": "fail",
+
+    "skill-exponent-rules": "pass",
+    "skill-scientific-notation": "pass",
+    "skill-order-of-magnitude": "fail",
+
+    "skill-place-value": "pass",
+    "skill-significant-figures": "pass",
+    "skill-number-line-estimation": "pass",
+
+    "skill-unit-analysis": "pass",
+    "skill-unit-conversion": "pass",
+
+    "skill-fraction-equivalence": "pass",
+    "skill-fraction-operations": "pass",
+    "subskill-fraction-add-subtract": "pass",
+    "subskill-fraction-multiply-divide": "fail",
+    "skill-mixed-numbers": "pass",
+
+    "skill-scale-drawings": "pass",
+    "skill-angle-relationships": "pass",
+    "skill-area-circle": "pass",
+
+    "skill-transformations": "pass",
+    "subskill-translation-reflection": "pass",
+    "subskill-rotation": "pass",
+    "subskill-dilation": "pass",
+    "skill-congruence-similarity": "pass",
+    "skill-pythagorean-theorem": "pass",
+
+    "skill-data-distributions": "fail",
+    "subskill-mean-median-mode": "fail",
+    "subskill-spread-measures": "pass",
+    "skill-scatter-plots": "pass",
+
+    "skill-function-notation": "pass",
+    "skill-linear-functions": "fail"
+  },
+  "student-sam": {
+    "skill-combine-like-terms": "pass",
+    "skill-distributive-property": "fail",
+    "subskill-distribute-expand": "fail",
+    "subskill-distribute-factor": "pass",
+    "skill-equivalent-expressions": "fail",
+
+    "skill-unit-rate": "fail",
+
+    "skill-exponent-rules": "fail",
+
+    "skill-place-value": "fail",
+
+    "skill-fraction-equivalence": "fail",
+    "skill-mixed-numbers": "fail",
+
+    "skill-scale-drawings": "fail",
+    "skill-angle-relationships": "fail",
+
+    "skill-transformations": "fail",
+    "subskill-translation-reflection": "fail",
+
+    "skill-data-distributions": "fail",
+
+    "skill-function-notation": "fail"
+  }
+}

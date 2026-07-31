@@ -1,0 +1,25 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - heading "Standards + Skills Knowledge Graph" [level=1] [ref=f1e5]
+    - paragraph [ref=f1e6]: Work through a standard's skills, mark mastery, and progress through the standards chain — or use quick lookup to inspect any standard or skill.
+  - generic [ref=f1e7]:
+    - main [ref=f1e8]:
+      - generic [ref=f1e9]:
+        - heading "Mastery path" [level=2] [ref=f1e10]
+        - generic [ref=f1e11]:
+          - generic [ref=f1e12]: Standard 1
+          - combobox [ref=f1e13]:
+            - option "Select a standard..." [selected]
+            - option "NY-7.EE.1 (Grade 7) — Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships."
+            - option "NY-8.EE.3 (Grade 8) — Use numbers expressed in the form of a single digit times an integer power of 10 to estimate very large or very small quantities, and express how many times as much one is than the other."
+            - option "NY-9.NQ.1 (Grade 9) — Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas, and interpret units of quantities expressed in scientific notation."
+      - generic [ref=f1e14]:
+        - button "Hide quick lookup" [ref=f1e19]
+        - generic [ref=f1e20]:
+          - heading "Quick lookup" [level=2] [ref=f1e21]
+          - generic [ref=f1e23]:
+            - textbox "Search a standard code or skill name..." [active] [ref=f1e24]
+            - button "Search" [ref=f1e25]
+    - complementary [ref=f1e16]:
+      - heading "Skill detail" [level=2] [ref=f1e17]
+      - generic [ref=f1e18]: Select a skill node to see its pass criteria.

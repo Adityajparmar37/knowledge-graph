@@ -1,0 +1,50 @@
+- generic [ref=f9e3]:
+  - banner [ref=f9e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f9e5]
+    - paragraph [ref=f9e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+  - generic [ref=f9e7]:
+    - generic [ref=f9e8]:
+      - heading "Select Standard" [level=2] [ref=f9e9]
+      - generic [ref=f9e10]:
+        - generic [ref=f9e11]:
+          - generic [ref=f9e12]: Search by code or description
+          - textbox "Search by code or description" [ref=f9e13]:
+            - /placeholder: e.g. NY-7.EE.1
+        - generic [ref=f9e14]:
+          - generic [ref=f9e15]: All standards
+          - list [ref=f9e16]:
+            - listitem [ref=f9e17]:
+              - button "NY-5.NF.1" [ref=f9e18] [cursor=pointer]
+            - listitem [ref=f9e19]:
+              - button "NY-6.NS.1" [ref=f9e20] [cursor=pointer]
+            - listitem [ref=f9e21]:
+              - button "NY-7.EE.1" [ref=f9e22] [cursor=pointer]
+            - listitem [ref=f9e23]:
+              - button "NY-7.G.1" [ref=f9e24] [cursor=pointer]
+            - listitem [ref=f9e25]:
+              - button "NY-8.EE.3" [ref=f9e26] [cursor=pointer]
+            - listitem [ref=f9e27]:
+              - button "NY-8.G.1" [ref=f9e28] [cursor=pointer]
+            - listitem [ref=f9e29]:
+              - button "NY-9.NQ.1" [ref=f9e30] [cursor=pointer]
+            - listitem [ref=f9e31]:
+              - button "NY-9.SP.1" [ref=f9e32] [cursor=pointer]
+            - listitem [ref=f9e33]:
+              - button "NY-10.F.1" [ref=f9e34] [cursor=pointer]
+      - generic [ref=f9e35]:
+        - generic [ref=f9e36]: Track a student
+        - list [ref=f9e37]:
+          - listitem [ref=f9e38]:
+            - button "None" [ref=f9e39] [cursor=pointer]
+          - listitem [ref=f9e40]:
+            - button "Alex Rivera" [active] [ref=f9e41] [cursor=pointer]
+          - listitem [ref=f9e42]:
+            - button "Priya Nair" [ref=f9e43] [cursor=pointer]
+          - listitem [ref=f9e44]:
+            - button "Sam Okafor" [ref=f9e45] [cursor=pointer]
+    - generic [ref=f9e46]:
+      - heading "Standard Breakdown" [level=2] [ref=f9e47]
+      - generic [ref=f9e48]: Select a standard on the left to explore its breakdown.
+    - generic [ref=f9e49]:
+      - heading "Subject Detail" [level=2] [ref=f9e50]
+      - generic [ref=f9e51]: Click a subject in the middle panel to see its skill tree.

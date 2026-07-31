@@ -1,0 +1,59 @@
+- generic [ref=f13e3]:
+  - banner [ref=f13e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f13e5]
+    - paragraph [ref=f13e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+  - generic [ref=f13e7]:
+    - generic [ref=f13e8]:
+      - heading "Select Standard" [level=2] [ref=f13e9]
+      - generic [ref=f13e10]:
+        - generic [ref=f13e11]:
+          - generic [ref=f13e12]: Search by code or description
+          - textbox "Search by code or description" [ref=f13e13]:
+            - /placeholder: e.g. NY-7.EE.1
+        - generic [ref=f13e14]:
+          - generic [ref=f13e15]: All standards
+          - list [ref=f13e16]:
+            - listitem [ref=f13e17]:
+              - button "NY-5.NF.1" [ref=f13e18] [cursor=pointer]
+            - listitem [ref=f13e19]:
+              - button "NY-6.NS.1" [ref=f13e20] [cursor=pointer]
+            - listitem [ref=f13e21]:
+              - button "NY-7.EE.1" [active] [ref=f13e22] [cursor=pointer]
+            - listitem [ref=f13e23]:
+              - button "NY-7.G.1" [ref=f13e24] [cursor=pointer]
+            - listitem [ref=f13e25]:
+              - button "NY-8.EE.3" [ref=f13e26] [cursor=pointer]
+            - listitem [ref=f13e27]:
+              - button "NY-8.G.1" [ref=f13e28] [cursor=pointer]
+            - listitem [ref=f13e29]:
+              - button "NY-9.NQ.1" [ref=f13e30] [cursor=pointer]
+            - listitem [ref=f13e31]:
+              - button "NY-9.SP.1" [ref=f13e32] [cursor=pointer]
+            - listitem [ref=f13e33]:
+              - button "NY-10.F.1" [ref=f13e34] [cursor=pointer]
+        - generic [ref=f13e52]:
+          - generic [ref=f13e53]: NY-7.EE.1
+          - generic [ref=f13e54]: Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships.
+      - generic [ref=f13e35]:
+        - generic [ref=f13e36]: Track a student
+        - list [ref=f13e37]:
+          - listitem [ref=f13e38]:
+            - button "None" [ref=f13e39] [cursor=pointer]
+          - listitem [ref=f13e40]:
+            - button "Alex Rivera" [ref=f13e41] [cursor=pointer]
+          - listitem [ref=f13e42]:
+            - button "Priya Nair" [ref=f13e43] [cursor=pointer]
+          - listitem [ref=f13e44]:
+            - button "Sam Okafor" [ref=f13e45] [cursor=pointer]
+    - generic [ref=f13e46]:
+      - heading "Standard Breakdown" [level=2] [ref=f13e47]
+      - generic [ref=f13e48]:
+        - generic [ref=f13e62]:
+          - button "Zoom in" [ref=f13e63] [cursor=pointer]: +
+          - button "Zoom out" [ref=f13e64] [cursor=pointer]: −
+          - button "Reset zoom and fit" [ref=f13e65] [cursor=pointer]: ⤢
+          - button "Rotate graph 90 degrees" [ref=f13e66] [cursor=pointer]: ⟳
+        - paragraph [ref=f13e67]: Click the standard to reveal its subjects, then click "Subjects" to fan them out and see what this standard builds toward. Click a subject to explore its skills on the right.
+    - generic [ref=f13e49]:
+      - heading "Subject Detail" [level=2] [ref=f13e50]
+      - generic [ref=f13e51]: Click a subject in the middle panel to see its skill tree.

@@ -1,0 +1,56 @@
+- generic [ref=f4e3]:
+  - banner [ref=f4e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f4e5]
+    - paragraph [ref=f4e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+  - generic [ref=f4e159]:
+    - generic [ref=f4e160]:
+      - heading "Select Standard" [level=2] [ref=f4e161]
+      - generic [ref=f4e162]:
+        - generic [ref=f4e163]:
+          - generic [ref=f4e164]: Search by code or description
+          - textbox "Search by code or description" [ref=f4e165]:
+            - /placeholder: e.g. NY-7.EE.1
+        - generic [ref=f4e166]:
+          - generic [ref=f4e167]: All standards
+          - list [ref=f4e168]:
+            - listitem [ref=f4e169]:
+              - button "NY-6.NS.1" [ref=f4e170] [cursor=pointer]
+            - listitem [ref=f4e171]:
+              - button "NY-7.EE.1" [ref=f4e172] [cursor=pointer]
+            - listitem [ref=f4e173]:
+              - button "NY-8.EE.3" [ref=f4e174] [cursor=pointer]
+            - listitem [ref=f4e175]:
+              - button "NY-9.NQ.1" [ref=f4e176] [cursor=pointer]
+        - generic [ref=f4e177]:
+          - generic [ref=f4e178]: NY-7.EE.1
+          - generic [ref=f4e179]: Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships.
+      - generic [ref=f4e180]:
+        - generic [ref=f4e181]: Track a student
+        - list [ref=f4e182]:
+          - listitem [ref=f4e183]:
+            - button "None" [ref=f4e184] [cursor=pointer]
+          - listitem [ref=f4e185]:
+            - button "Alex Rivera" [ref=f4e186] [cursor=pointer]
+          - listitem [ref=f4e187]:
+            - button "Priya Nair" [ref=f4e188] [cursor=pointer]
+          - listitem [ref=f4e189]:
+            - button "Sam Okafor" [ref=f4e190] [cursor=pointer]
+    - generic [ref=f4e191]:
+      - heading "Standard Breakdown" [level=2] [ref=f4e192]
+      - generic [ref=f4e193]:
+        - generic [ref=f4e201]:
+          - button "Zoom in" [ref=f4e202] [cursor=pointer]: +
+          - button "Zoom out" [ref=f4e203] [cursor=pointer]: −
+          - button "Reset zoom and fit" [ref=f4e204] [cursor=pointer]: ⤢
+          - button "Rotate graph 90 degrees" [ref=f4e205] [cursor=pointer]: ⟳
+        - paragraph [ref=f4e206]: Click the standard to reveal its subjects, then click "Subjects" to fan them out and see what this standard builds toward. Click a subject to explore its skills on the right.
+    - generic [ref=f4e207]:
+      - heading "Subject Detail — Algebra" [level=2] [ref=f4e208]
+      - generic [ref=f4e209]:
+        - generic [ref=f4e217]:
+          - button "Zoom in" [ref=f4e218] [cursor=pointer]: +
+          - button "Zoom out" [ref=f4e219] [cursor=pointer]: −
+          - button "Reset zoom and fit" [ref=f4e220] [cursor=pointer]: ⤢
+          - button "Rotate graph 90 degrees" [ref=f4e221] [cursor=pointer]: ⟳
+        - paragraph [ref=f4e222]: Click a skill to reveal its sub-skills, or click a leaf skill to see a worked example. Track a student on the left to see pass/fail badges and auto-diagnostic drill-downs.
+        - generic [ref=f4e223]: Click a skill or sub-skill node to see its worked example and pass criteria.

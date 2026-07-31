@@ -1,0 +1,36 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=e5]
+    - paragraph [ref=e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria.
+  - generic [ref=e7]:
+    - generic [ref=e8]:
+      - heading "Select Standard" [level=2] [ref=e9]
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - generic [ref=e12]: Search by code or description
+          - textbox "Search by code or description" [ref=e13]:
+            - /placeholder: e.g. NY-7.EE.1
+        - generic [ref=e14]:
+          - generic [ref=e15]: All standards
+          - list [ref=e16]:
+            - listitem [ref=e17]:
+              - button "NY-7.EE.1" [ref=e18] [cursor=pointer]
+            - listitem [ref=e19]:
+              - button "NY-8.EE.3" [ref=e20] [cursor=pointer]
+            - listitem [ref=e21]:
+              - button "NY-9.NQ.1" [ref=e22] [cursor=pointer]
+        - generic [ref=e29]:
+          - generic [ref=e30]: NY-7.EE.1
+          - generic [ref=e31]: Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships.
+    - generic [ref=e23]:
+      - heading "Standard Breakdown" [level=2] [ref=e24]
+      - generic [ref=e25]:
+        - generic [ref=e39]:
+          - button "Zoom in" [ref=e40] [cursor=pointer]: +
+          - button "Zoom out" [ref=e41] [cursor=pointer]: −
+          - button "Reset zoom and fit" [ref=e42] [cursor=pointer]: ⤢
+          - button "Rotate graph 90 degrees" [active] [ref=e43] [cursor=pointer]: ⟳
+        - paragraph [ref=e44]: Click the standard to reveal its subjects, then click "Subjects" to fan them out and see what this standard builds toward. Click a subject to explore its skills on the right.
+    - generic [ref=e26]:
+      - heading "Subject Detail" [level=2] [ref=e27]
+      - generic [ref=e28]: Click a subject in the middle panel to see its skill tree.

@@ -1,0 +1,64 @@
+- generic [ref=f21e3]:
+  - banner [ref=f21e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f21e5]
+    - paragraph [ref=f21e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+    - generic [ref=f21e7]:
+      - generic [ref=f21e8]:
+        - generic [ref=f21e9]: Search by code or description
+        - textbox "Search by code or description" [ref=f21e10]:
+          - /placeholder: e.g. NY-7.EE.1
+      - generic [ref=f21e11]:
+        - generic [ref=f21e12]: State
+        - combobox "State" [ref=f21e13]:
+          - option "All states" [selected]
+          - option "California"
+          - option "New York"
+      - generic [ref=f21e14]:
+        - generic [ref=f21e15]: Standard
+        - combobox "Standard" [ref=f21e16]:
+          - option "Choose a standard"
+          - option "NY-5.NF.1"
+          - option "NY-6.NS.1"
+          - option "NY-7.EE.1" [selected]
+          - option "NY-7.G.1"
+          - option "NY-8.EE.3"
+          - option "NY-8.G.1"
+          - option "NY-9.NQ.1"
+          - option "NY-9.SP.1"
+          - option "NY-10.F.1"
+          - option "CA-5.NF.1"
+          - option "CA-6.NS.1"
+          - option "CA-7.EE.1"
+          - option "CA-7.G.1"
+          - option "CA-8.EE.3"
+          - option "CA-8.G.1"
+          - option "CA-9.NQ.1"
+          - option "CA-9.SP.1"
+          - option "CA-10.F.1"
+      - generic [ref=f21e17]:
+        - generic [ref=f21e18]: Track a student
+        - list [ref=f21e19]:
+          - listitem [ref=f21e20]:
+            - button "None" [ref=f21e21] [cursor=pointer]
+          - listitem [ref=f21e22]:
+            - button "Alex Rivera" [ref=f21e23] [cursor=pointer]
+          - listitem [ref=f21e24]:
+            - button "Priya Nair" [ref=f21e25] [cursor=pointer]
+          - listitem [ref=f21e26]:
+            - button "Sam Okafor" [ref=f21e27] [cursor=pointer]
+    - generic [ref=f21e37]:
+      - generic [ref=f21e38]: NY-7.EE.1
+      - generic [ref=f21e39]: Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships.
+  - generic [ref=f21e28]:
+    - generic [ref=f21e29]:
+      - heading "Standard Breakdown" [level=2] [ref=f21e31]
+      - generic [ref=f21e32]:
+        - generic [ref=f21e47]:
+          - button "Zoom in" [ref=f21e48] [cursor=pointer]: +
+          - button "Zoom out" [ref=f21e49] [cursor=pointer]: −
+          - button "Reset zoom and fit" [ref=f21e50] [cursor=pointer]: ⤢
+          - button "Rotate graph 90 degrees" [ref=f21e51] [cursor=pointer]: ⟳
+        - paragraph [ref=f21e52]: Click the standard to reveal its subjects, then click "Subjects" to fan them out and see what this standard builds toward. Click a subject to explore its skills on the right.
+    - generic [ref=f21e33]:
+      - heading "Subject Detail" [level=2] [ref=f21e35]
+      - generic [ref=f21e36]: Click a subject in the middle panel to see its skill tree.
