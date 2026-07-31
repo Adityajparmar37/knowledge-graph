@@ -4,7 +4,7 @@ import StudentSelector from './components/StudentSelector.jsx';
 import StandardGraph from './components/StandardGraph.jsx';
 import SubjectSkillGraph from './components/SubjectSkillGraph.jsx';
 import NodeDetailPage from './components/NodeDetailPage.jsx';
-import { getAllStandards, getStandard, getSubject } from './lib/graphStore.js';
+import { getAllStandards, getAllSubjects, getAllSkills, getStandard, getSubject } from './lib/graphStore.js';
 import { getSkillOwner } from './lib/traverse.js';
 
 export default function App() {
@@ -37,6 +37,17 @@ export default function App() {
     () => [...new Set(getAllStandards().map((standard) => standard.grade))].sort((a, b) => a - b),
     []
   );
+
+  const dataCounts = useMemo(() => {
+    const allSkills = getAllSkills();
+    const subSkillIds = new Set(allSkills.flatMap((skill) => skill.subSkillIds || []));
+    return {
+      standards: getAllStandards().length,
+      subjects: getAllSubjects().length,
+      skills: allSkills.filter((skill) => !subSkillIds.has(skill.id)).length,
+      subSkills: allSkills.filter((skill) => subSkillIds.has(skill.id)).length,
+    };
+  }, []);
 
   const handleStateFilterChange = useCallback((nextState) => {
     setStateFilter(nextState);
@@ -112,6 +123,21 @@ export default function App() {
           worked examples and pass criteria. Track a student to see live pass/fail status and
           auto-diagnostic drill-downs on failed skills.
         </p>
+
+        <ul className="data-counts">
+          <li>
+            <strong>{dataCounts.standards}</strong> standards
+          </li>
+          <li>
+            <strong>{dataCounts.subjects}</strong> subjects
+          </li>
+          <li>
+            <strong>{dataCounts.skills}</strong> skills
+          </li>
+          <li>
+            <strong>{dataCounts.subSkills}</strong> sub-skills
+          </li>
+        </ul>
 
         {activeView === 'explorer' && (
           <div className="app-header-controls">

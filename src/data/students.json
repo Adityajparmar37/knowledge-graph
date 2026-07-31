@@ -1,5 +1,14 @@
 [
-  { "id": "student-alex", "name": "Alex Rivera" },
-  { "id": "student-priya", "name": "Priya Nair" },
-  { "id": "student-sam", "name": "Sam Okafor" }
+  {
+    "id": "student-alex",
+    "name": "Alex Rivera"
+  },
+  {
+    "id": "student-priya",
+    "name": "Priya Nair"
+  },
+  {
+    "id": "student-sam",
+    "name": "Sam Okafor"
+  }
 ]

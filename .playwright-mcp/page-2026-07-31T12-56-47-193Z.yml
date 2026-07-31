@@ -1,0 +1,119 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=e5]
+    - paragraph [ref=e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - generic [ref=e9]: Search by code or description
+        - textbox "Search by code or description" [ref=e10]:
+          - /placeholder: e.g. NY-7.EE.1
+      - generic [ref=e11]:
+        - generic [ref=e12]: State
+        - combobox "State" [ref=e13]:
+          - option "All states" [selected]
+          - option "Multi-State"
+      - generic [ref=e14]:
+        - generic [ref=e15]: Grade
+        - combobox "Grade" [ref=e16]:
+          - option "All grades" [selected]
+          - option "Grade 0"
+          - option "Grade 1"
+          - option "Grade 2"
+          - option "Grade 3"
+          - option "Grade 4"
+          - option "Grade 5"
+          - option "Grade 6"
+          - option "Grade 7"
+          - option "Grade 8"
+          - option "Grade 9"
+      - generic [ref=e17]:
+        - generic [ref=e18]: Standard
+        - combobox "Standard" [ref=e19]:
+          - option "Choose a standard" [selected]
+          - option "2.G"
+          - option "2.MD"
+          - option "2.OA"
+          - option "2.NBT"
+          - option "6.RP"
+          - option "6.SP"
+          - option "6.G"
+          - option "6.NS"
+          - option "6.EE"
+          - option "5.NBT"
+          - option "5.NF"
+          - option "5.OA"
+          - option "5.G"
+          - option "5.MD"
+          - option "7.SP"
+          - option "7.NS"
+          - option "7.RP"
+          - option "7.G"
+          - option "7.EE"
+          - option "K.CC"
+          - option "K.MD"
+          - option "K.G"
+          - option "K.OA"
+          - option "K.NBT"
+          - option "1.OA"
+          - option "1.NBT"
+          - option "1.MD"
+          - option "1.G"
+          - option "8.SP"
+          - option "8.NS"
+          - option "8.G"
+          - option "8.EE"
+          - option "8.F"
+          - option "4.NF"
+          - option "4.OA"
+          - option "4.G"
+          - option "4.NBT"
+          - option "4.MD"
+          - option "3.MD"
+          - option "3.NBT"
+          - option "3.NF"
+          - option "3.OA"
+          - option "3.G"
+          - option "HSG-C.B"
+          - option "HSG-MG.A"
+          - option "HSG-GMD.B"
+          - option "HSG-GPE.B"
+          - option "HSG-SRT.C"
+          - option "HSG-CO.A"
+          - option "HSN-CN.B"
+          - option "HSN-VM.C"
+          - option "HSN-Q.A"
+          - option "HSN-RN.B"
+          - option "HSF-IF.A"
+          - option "HSF-LE.B"
+          - option "HSF-BF.A"
+          - option "HSF-TF.C"
+          - option "HSS-ID.C"
+          - option "HSS-CP.A"
+          - option "HSS-MD.B"
+          - option "HSS-IC.B"
+          - option "HSA-SSE.B"
+          - option "HSA-APR.B"
+          - option "HSA-CED.A"
+          - option "HSA-REI.B"
+      - generic [ref=e20]:
+        - generic [ref=e21]: Track a student
+        - list [ref=e22]:
+          - listitem [ref=e23]:
+            - button "None" [ref=e24] [cursor=pointer]
+          - listitem [ref=e25]:
+            - button "Alex Rivera" [active] [ref=e26] [cursor=pointer]
+          - listitem [ref=e27]:
+            - button "Priya Nair" [ref=e28] [cursor=pointer]
+          - listitem [ref=e29]:
+            - button "Sam Okafor" [ref=e30] [cursor=pointer]
+    - list [ref=e40]:
+      - listitem [ref=e41]: Passed
+      - listitem [ref=e43]: Failed
+      - listitem [ref=e45]: Unattempted — room to improve
+  - generic [ref=e31]:
+    - generic [ref=e32]:
+      - heading "Standard Breakdown" [level=2] [ref=e34]
+      - generic [ref=e35]: Select a standard on the left to explore its breakdown.
+    - generic [ref=e36]:
+      - heading "Subject Detail" [level=2] [ref=e38]
+      - generic [ref=e39]: Click a subject in the middle panel to see its skill tree.
