@@ -175,7 +175,7 @@ export default function App() {
           </div>
         )}
 
-        {selectedStandard && (
+        {activeView === 'explorer' && selectedStandard && (
           <div className="standard-selected-summary">
             <div className="standard-selected-code">{selectedStandard.code}</div>
             <div className="standard-selected-desc">{selectedStandard.description}</div>

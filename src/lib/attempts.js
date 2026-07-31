@@ -1,10 +1,58 @@
 import skillAttempts from '../data/skillAttempts.json';
 import { getSkill, getStandard, getSubject } from './graphStore.js';
 
+const OVERRIDE_KEY_PREFIX = 'ssx-mastery-override:';
+
+/**
+ * Per-student "retest" overrides layered on top of the static seed data in
+ * skillAttempts.json — lets a failed/unattempted skill be marked passed
+ * (simulating the student retaking and clearing it) without editing the
+ * seed file. Persisted in localStorage, scoped per student. Reading is
+ * defensive (private-mode/quota errors just fall back to no overrides).
+ */
+function readOverrides(studentId) {
+  if (!studentId) return {};
+  try {
+    const raw = localStorage.getItem(OVERRIDE_KEY_PREFIX + studentId);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+function writeOverrides(studentId, overrides) {
+  try {
+    localStorage.setItem(OVERRIDE_KEY_PREFIX + studentId, JSON.stringify(overrides));
+  } catch {
+    // Storage unavailable (private browsing, quota) — override just won't persist.
+  }
+}
+
+/**
+ * Toggles a skill's pass override for one student: if it's currently
+ * failed or unattempted, marks it passed (simulating a successful retest);
+ * if it's already passed via an override, clears the override to revert to
+ * the original seed status.
+ * @param {string|null} studentId
+ * @param {string} skillId
+ */
+export function toggleSkillPassOverride(studentId, skillId) {
+  if (!studentId || !skillId) return;
+  const overrides = readOverrides(studentId);
+  if (overrides[skillId]) {
+    delete overrides[skillId];
+  } else {
+    overrides[skillId] = 'pass';
+  }
+  writeOverrides(studentId, overrides);
+}
+
 /**
  * Per-student, per-skill pass/fail lookup. Any skill/sub-skill id absent
  * from a student's record is treated as "unattempted" rather than an
- * error, so partially-seeded students never crash the UI.
+ * error, so partially-seeded students never crash the UI. A localStorage
+ * retest override (see toggleSkillPassOverride) always wins over the seed
+ * data when present.
  *
  * @param {string|null} studentId
  * @param {string} skillId
@@ -12,6 +60,8 @@ import { getSkill, getStandard, getSubject } from './graphStore.js';
  */
 export function getSkillStatus(studentId, skillId) {
   if (!studentId || !skillId) return 'unattempted';
+  const overrides = readOverrides(studentId);
+  if (overrides[skillId]) return overrides[skillId];
   const studentRecord = skillAttempts[studentId];
   if (!studentRecord) return 'unattempted';
   return studentRecord[skillId] || 'unattempted';

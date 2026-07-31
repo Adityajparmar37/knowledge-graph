@@ -3,7 +3,7 @@ import cytoscape from 'cytoscape';
 import dagre from 'cytoscape-dagre';
 import { getSkillSummary, getSubSkills, getSubjectSkillSummary, getSkillOwner } from '../lib/traverse.js';
 import { getStandard } from '../lib/graphStore.js';
-import { getSkillStatus, getAutoExpandIds } from '../lib/attempts.js';
+import { getSkillStatus, getAutoExpandIds, toggleSkillPassOverride } from '../lib/attempts.js';
 import InfoCard from './InfoCard.jsx';
 import GraphLegend from './GraphLegend.jsx';
 import {
@@ -156,6 +156,10 @@ export default function SubjectSkillGraph({
   const [expandedIds, setExpandedIds] = useState(() => new Set());
   const [activeLeafId, setActiveLeafId] = useState(null);
   const [rotation, setRotation] = useState(0);
+  // Bumped whenever a skill's pass override is toggled, to force the graph
+  // to rebuild with fresh status (localStorage reads don't trigger re-renders
+  // on their own since they're not React state).
+  const [overrideVersion, setOverrideVersion] = useState(0);
   // Last tapped "real" node (subject root or skill/sub-skill) — drives the
   // small "View full details" toolbar without touching any existing tap behavior.
   const [lastTapped, setLastTapped] = useState(null);
@@ -360,6 +364,17 @@ export default function SubjectSkillGraph({
       }
     });
 
+    // Right-click (or long-press/two-finger tap on trackpads) a skill or
+    // sub-skill to mark it passed — simulates the student retesting and
+    // clearing it, without touching progression (the next-standard node
+    // stays unlocked regardless either way).
+    cy.on('cxttap', 'node', (evt) => {
+      const data = evt.target.data();
+      if (!studentId || (data.kind !== 'skill' && data.kind !== 'subskill')) return;
+      toggleSkillPassOverride(studentId, data.id);
+      setOverrideVersion((v) => v + 1);
+    });
+
     cy.on('layoutstop', () => {
       if (isFirstRender || newNodeIds.length === 0) {
         cy.fit(undefined, 40);
@@ -385,7 +400,7 @@ export default function SubjectSkillGraph({
       cyRef.current = null;
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [subjectId, expandedIds, activeLeafId, studentId]);
+  }, [subjectId, expandedIds, activeLeafId, studentId, overrideVersion]);
 
   useEffect(() => {
     const cy = cyRef.current;
@@ -483,7 +498,7 @@ export default function SubjectSkillGraph({
       <p className="graph-hint">
         Click a skill to reveal its sub-skills, or click a leaf skill to see a worked example.
         {studentId
-          ? ' Skills marked ❌ for the tracked student auto-drill into their sub-skills; 🔗 badges jump to a related skill in another grade.'
+          ? ' Skills marked ❌ for the tracked student auto-drill into their sub-skills; 🔗 badges jump to a related skill in another grade. Right-click (or long-press) a skill/sub-skill to mark it passed — simulates a retest, doesn’t block moving to the next standard either way.'
           : ' Track a student on the left to see pass/fail badges and auto-diagnostic drill-downs.'}
       </p>
       <GraphLegend items={SUBJECT_SKILL_GRAPH_LEGEND} />

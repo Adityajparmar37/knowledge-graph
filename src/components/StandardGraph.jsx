@@ -74,7 +74,7 @@ function buildElements(standardId, revealStep, studentId) {
   if (revealStep < 1) return elements;
 
   const labelId = `${standard.id}::subjects-label`;
-  elements.push({ data: { id: labelId, label: 'Subjects', kind: SUBJECTS_LABEL_KIND } });
+  elements.push({ data: { id: labelId, label: 'Lessons', kind: SUBJECTS_LABEL_KIND } });
   elements.push({
     data: { id: `${standard.id}->${labelId}`, source: standard.id, target: labelId },
   });
@@ -443,7 +443,7 @@ export default function StandardGraph({
         </div>
       </div>
       <p className="graph-hint">
-        Click the standard to reveal its subjects, then click "Subjects" to fan them out and see
+        Click the standard to reveal its subjects, then click "Lessons" to fan them out and see
         what this standard builds toward. Click a subject to explore its skills on the right.
       </p>
       <GraphLegend items={STANDARD_GRAPH_LEGEND} />
