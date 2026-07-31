@@ -21554,7 +21554,7 @@
   {
     "id": "std-f9f338e7-6971-577c-916e-5650f2217e1a",
     "code": "HSF-TF",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Trigonometric Functions",
     "buildsToward": [],
@@ -21568,7 +21568,7 @@
   {
     "id": "std-d80598e4-f4b1-57ee-9ab8-d6bb11a6e54b",
     "code": "HSF-BF",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Building Functions",
     "buildsToward": [],
@@ -21581,7 +21581,7 @@
   {
     "id": "std-764f1bed-4a05-5336-9076-4c846c56b49a",
     "code": "HSF-IF",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Interpreting Functions",
     "buildsToward": [],
@@ -21595,7 +21595,7 @@
   {
     "id": "std-ac61cb38-b231-5182-801e-5ba7e5a3662e",
     "code": "HSF-LE",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Linear, Quadratic, & Exponential Models",
     "buildsToward": [],
@@ -21608,7 +21608,7 @@
   {
     "id": "std-e9afdcaf-a009-59d9-866e-6855b3e2b6e6",
     "code": "HSG-CO",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Congruence",
     "buildsToward": [],
@@ -21623,7 +21623,7 @@
   {
     "id": "std-5ccd3675-f336-5269-833e-76b51423567a",
     "code": "HSG-GMD",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Geometric Measurement & Dimension",
     "buildsToward": [],
@@ -21636,7 +21636,7 @@
   {
     "id": "std-d45659be-636d-5bde-ab90-937ac52267ea",
     "code": "HSG-SRT",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Similarity, Right Triangles, & Trigonometry",
     "buildsToward": [],
@@ -21651,7 +21651,7 @@
   {
     "id": "std-0d8567c5-77e7-55c9-bf7c-074a999fab1b",
     "code": "HSG-C",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Circles",
     "buildsToward": [],
@@ -21664,7 +21664,7 @@
   {
     "id": "std-0ed11a0f-7c9b-5bcb-a4d9-3feb23081b1c",
     "code": "HSG-MG",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Modeling with Geometry",
     "buildsToward": [],
@@ -21676,7 +21676,7 @@
   {
     "id": "std-c464c51c-f34b-5823-b40d-bbe1a625ee10",
     "code": "HSG-GPE",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Expressing Geometric Properties with Equations",
     "buildsToward": [],
@@ -21689,7 +21689,7 @@
   {
     "id": "std-663252d8-f9a5-591b-ad7d-ad1f7ee1b7bc",
     "code": "HSN-CN",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "The Complex Number System",
     "buildsToward": [],
@@ -21703,7 +21703,7 @@
   {
     "id": "std-81066e88-b54c-58e3-844d-09520eda15f1",
     "code": "HSN-VM",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Vector & Matrix Quantities",
     "buildsToward": [],
@@ -21717,7 +21717,7 @@
   {
     "id": "std-894839c9-707a-55c6-9eba-3fd4f35be110",
     "code": "HSN-Q",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Quantities",
     "buildsToward": [],
@@ -21729,7 +21729,7 @@
   {
     "id": "std-fcaea8f9-28de-578c-8600-ef53dcef23a2",
     "code": "HSN-RN",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "The Real Number System",
     "buildsToward": [],
@@ -21742,7 +21742,7 @@
   {
     "id": "std-9d5ca201-d949-5620-923b-0aba9a622c55",
     "code": "HSA-CED",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Creating Equations",
     "buildsToward": [],
@@ -21754,7 +21754,7 @@
   {
     "id": "std-09cdb8fb-3a2f-5baf-bf0b-bc5800802b39",
     "code": "HSA-SSE",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Seeing Structure in Expressions",
     "buildsToward": [],
@@ -21767,7 +21767,7 @@
   {
     "id": "std-7e9493e1-dd70-5ef1-a0e6-1b7f7882674c",
     "code": "HSA-APR",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Arithmetic with Polynomials & Rational Expressions",
     "buildsToward": [],
@@ -21782,7 +21782,7 @@
   {
     "id": "std-d3030360-cea4-5e6a-be21-fbc65f1dc149",
     "code": "HSA-REI",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Reasoning with Equations & Inequalities",
     "buildsToward": [],
@@ -21797,7 +21797,7 @@
   {
     "id": "std-24716cd8-7b34-5085-9d25-86c356e7405e",
     "code": "HSS-ID",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Interpreting Categorical & Quantitative Data",
     "buildsToward": [],
@@ -21811,7 +21811,7 @@
   {
     "id": "std-b5a08928-0ea3-5759-906d-04e34eb15be4",
     "code": "HSS-IC",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Making Inferences & Justifying Conclusions",
     "buildsToward": [],
@@ -21824,7 +21824,7 @@
   {
     "id": "std-3e8f9387-7947-54f6-aed3-60f55b5a30cb",
     "code": "HSS-CP",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Conditional Probability & the Rules of Probability",
     "buildsToward": [],
@@ -21837,7 +21837,7 @@
   {
     "id": "std-a4be9d3d-5463-5493-8515-fbf94998c200",
     "code": "HSS-MD",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 9,
     "description": "Using Probability to Make Decisions",
     "buildsToward": [],
@@ -21850,7 +21850,7 @@
   {
     "id": "std-928b9c8f-c2ac-517b-b678-f746275ea952",
     "code": "K.OA",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 0,
     "description": "Operations & Algebraic Thinking",
     "buildsToward": [
@@ -21864,7 +21864,7 @@
   {
     "id": "std-6ce4048f-46e0-5e53-bbcc-76938b927eee",
     "code": "K.G",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 0,
     "description": "Geometry",
     "buildsToward": [
@@ -21879,7 +21879,7 @@
   {
     "id": "std-dec0438f-7f19-5c04-9ac7-d6a9a4f781cb",
     "code": "K.NBT",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 0,
     "description": "Number & Operations in Base Ten",
     "buildsToward": [
@@ -21893,7 +21893,7 @@
   {
     "id": "std-14d8cb96-bcee-5177-8d71-e1e90aa82fe8",
     "code": "K.MD",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 0,
     "description": "Measurement & Data",
     "buildsToward": [
@@ -21908,7 +21908,7 @@
   {
     "id": "std-01ddafb8-b1f6-52ec-ad60-1ad39747bcf2",
     "code": "K.CC",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 0,
     "description": "Counting & Cardinality",
     "buildsToward": [],
@@ -21922,7 +21922,7 @@
   {
     "id": "std-646a152b-47e0-5ee7-b462-0f904c0f0c59",
     "code": "2.MD",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 2,
     "description": "Measurement & Data",
     "buildsToward": [
@@ -21941,7 +21941,7 @@
   {
     "id": "std-7ce9a174-7c23-59b4-8377-47fb21297a30",
     "code": "2.OA",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 2,
     "description": "Operations & Algebraic Thinking",
     "buildsToward": [
@@ -21959,7 +21959,7 @@
   {
     "id": "std-2b9ed8e1-8812-536b-831a-e0862831ae32",
     "code": "2.G",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 2,
     "description": "Geometry",
     "buildsToward": [
@@ -21975,7 +21975,7 @@
   {
     "id": "std-fed1b859-1b77-5bd2-9ff4-1e65a7c2fd6f",
     "code": "2.NBT",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 2,
     "description": "Number & Operations in Base Ten",
     "buildsToward": [
@@ -21992,7 +21992,7 @@
   {
     "id": "std-e3492a63-fd49-5c40-9e0b-3b155e37fd4b",
     "code": "1.MD",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 1,
     "description": "Measurement & Data",
     "buildsToward": [
@@ -22010,7 +22010,7 @@
   {
     "id": "std-0f71d578-d994-514c-99e3-1dfa41ac8526",
     "code": "1.NBT",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 1,
     "description": "Number & Operations in Base Ten",
     "buildsToward": [
@@ -22028,7 +22028,7 @@
   {
     "id": "std-ee45df57-e62e-569e-a21d-205a3c0590ae",
     "code": "1.G",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 1,
     "description": "Geometry",
     "buildsToward": [
@@ -22044,7 +22044,7 @@
   {
     "id": "std-00c46c80-96a4-5972-823d-a7f9771502ab",
     "code": "1.OA",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 1,
     "description": "Operations & Algebraic Thinking",
     "buildsToward": [
@@ -22063,7 +22063,7 @@
   {
     "id": "std-3c6cf192-549e-5257-89e4-f1353e3162da",
     "code": "5.NF",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 5,
     "description": "Number & Operations\u2014Fractions",
     "buildsToward": [],
@@ -22078,7 +22078,7 @@
   {
     "id": "std-3c979bad-2415-54c3-aa15-2bfe5c23abf1",
     "code": "5.OA",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 5,
     "description": "Operations & Algebraic Thinking",
     "buildsToward": [],
@@ -22093,7 +22093,7 @@
   {
     "id": "std-984ef46e-77b8-5f58-a678-e1fc93113310",
     "code": "5.MD",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 5,
     "description": "Measurement & Data",
     "buildsToward": [],
@@ -22109,7 +22109,7 @@
   {
     "id": "std-8a7f7cc3-8fe5-50d9-87c5-7f8deabb2ce0",
     "code": "5.G",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 5,
     "description": "Geometry",
     "buildsToward": [
@@ -22126,7 +22126,7 @@
   {
     "id": "std-35d25d42-42ff-5bbc-8bbe-3b929d1e2eee",
     "code": "5.NBT",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 5,
     "description": "Number & Operations in Base Ten",
     "buildsToward": [],
@@ -22141,7 +22141,7 @@
   {
     "id": "std-e0d847f6-991b-5dc0-a66b-0deb99ce53dc",
     "code": "8.EE",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 8,
     "description": "Expressions & Equations",
     "buildsToward": [],
@@ -22157,7 +22157,7 @@
   {
     "id": "std-ff2b2fbc-89b4-55d1-a47b-7f9c096b4c3a",
     "code": "8.F",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 8,
     "description": "Functions",
     "buildsToward": [],
@@ -22170,7 +22170,7 @@
   {
     "id": "std-8c6472f2-dbaf-572d-a5f6-5f4db1523ce7",
     "code": "8.NS",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 8,
     "description": "The Number System",
     "buildsToward": [],
@@ -22184,7 +22184,7 @@
   {
     "id": "std-34f2fead-a380-5f6e-b5bf-73382066e42f",
     "code": "8.SP",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 8,
     "description": "Statistics & Probability",
     "buildsToward": [],
@@ -22198,7 +22198,7 @@
   {
     "id": "std-d9e48f2b-8a24-52ae-b418-79c6172fd473",
     "code": "8.G",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 8,
     "description": "Geometry",
     "buildsToward": [],
@@ -22214,7 +22214,7 @@
   {
     "id": "std-271267b9-e5e3-578c-ac3e-eee3e171cdf2",
     "code": "3.MD",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 3,
     "description": "Measurement & Data",
     "buildsToward": [
@@ -22233,7 +22233,7 @@
   {
     "id": "std-87c23f31-1099-5f46-b64d-d0f8bdc687c6",
     "code": "3.OA",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 3,
     "description": "Operations & Algebraic Thinking",
     "buildsToward": [
@@ -22252,7 +22252,7 @@
   {
     "id": "std-7b74f351-9a8f-52aa-9dea-069f782710c0",
     "code": "3.NF",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 3,
     "description": "Number & Operations\u2014Fractions",
     "buildsToward": [
@@ -22266,7 +22266,7 @@
   {
     "id": "std-8fdaa029-1e09-5aa0-b7dc-841056d50621",
     "code": "3.G",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 3,
     "description": "Geometry",
     "buildsToward": [
@@ -22282,7 +22282,7 @@
   {
     "id": "std-68b8d4d8-d20b-51a6-a7cf-39954f7f1118",
     "code": "3.NBT",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 3,
     "description": "Number & Operations in Base Ten",
     "buildsToward": [
@@ -22298,7 +22298,7 @@
   {
     "id": "std-6273e5c2-7cdc-5ae3-8ba1-9a9f1aa9e78a",
     "code": "4.G",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 4,
     "description": "Geometry",
     "buildsToward": [
@@ -22314,7 +22314,7 @@
   {
     "id": "std-9191bab5-a697-5b95-85ef-217b699e607e",
     "code": "4.MD",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 4,
     "description": "Measurement & Data",
     "buildsToward": [
@@ -22332,7 +22332,7 @@
   {
     "id": "std-4003b263-9fe7-57dd-8073-6810a7b27c65",
     "code": "4.OA",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 4,
     "description": "Operations & Algebraic Thinking",
     "buildsToward": [
@@ -22350,7 +22350,7 @@
   {
     "id": "std-7170397a-84aa-5355-840c-ba26f5447b91",
     "code": "4.NBT",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 4,
     "description": "Number & Operations in Base Ten",
     "buildsToward": [
@@ -22367,7 +22367,7 @@
   {
     "id": "std-3071d9db-ab07-5434-93d5-0f64b91c1a34",
     "code": "4.NF",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 4,
     "description": "Number & Operations\u2014Fractions",
     "buildsToward": [
@@ -22385,7 +22385,7 @@
   {
     "id": "std-528540f1-e0b7-56cf-962f-6152fdb5f8a3",
     "code": "6.SP",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 6,
     "description": "Statistics & Probability",
     "buildsToward": [
@@ -22400,7 +22400,7 @@
   {
     "id": "std-1cfe7055-263d-58df-9466-dd39bfd16d37",
     "code": "6.RP",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 6,
     "description": "Ratios & Proportional Relationships",
     "buildsToward": [
@@ -22414,7 +22414,7 @@
   {
     "id": "std-d4e5ad57-8c29-5bb3-8f54-09d51c177ca2",
     "code": "6.EE",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 6,
     "description": "Expressions & Equations",
     "buildsToward": [
@@ -22430,7 +22430,7 @@
   {
     "id": "std-745272e3-3fd1-5bf2-a8f8-9d8cdd1cf105",
     "code": "6.G",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 6,
     "description": "Geometry",
     "buildsToward": [
@@ -22446,7 +22446,7 @@
   {
     "id": "std-aa69fcdc-79c8-50ab-90bc-7c6592d6d564",
     "code": "6.NS",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 6,
     "description": "The Number System",
     "buildsToward": [
@@ -22462,7 +22462,7 @@
   {
     "id": "std-8e2059e5-3bcb-584e-8219-b4c14464c3e7",
     "code": "7.G",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 7,
     "description": "Geometry",
     "buildsToward": [
@@ -22479,7 +22479,7 @@
   {
     "id": "std-89c36b5d-f2dd-5392-9408-df6c7f2720e7",
     "code": "7.RP",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 7,
     "description": "Ratios & Proportional Relationships",
     "buildsToward": [],
@@ -22493,7 +22493,7 @@
   {
     "id": "std-b10fce47-9828-5feb-8276-01f022b0e525",
     "code": "7.EE",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 7,
     "description": "Expressions & Equations",
     "buildsToward": [
@@ -22510,7 +22510,7 @@
   {
     "id": "std-1990866e-47de-59a6-aa85-21740baf3ef3",
     "code": "7.SP",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 7,
     "description": "Statistics & Probability",
     "buildsToward": [
@@ -22528,7 +22528,7 @@
   {
     "id": "std-7efd40f5-8571-56a7-8b62-e84234402645",
     "code": "7.NS",
-    "jurisdiction": "Multi-State",
+    "jurisdiction": "Common Core State Standards",
     "grade": 7,
     "description": "The Number System",
     "buildsToward": [

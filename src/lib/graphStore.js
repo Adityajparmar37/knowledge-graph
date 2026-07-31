@@ -106,3 +106,11 @@ export function getParentSkillId(subSkillId) {
 export function getSkillsLinkingTo(skillId) {
   return linkerSkillIdsByTargetId.get(skillId) || [];
 }
+
+/**
+ * @param {number} grade
+ * @returns {string} "Kindergarten" for grade 0, otherwise "Grade N"
+ */
+export function gradeLabel(grade) {
+  return grade === 0 ? 'Kindergarten' : `Grade ${grade}`;
+}

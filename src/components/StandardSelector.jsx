@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { getAllStandards } from '../lib/graphStore.js';
+import { getAllStandards, gradeLabel } from '../lib/graphStore.js';
 
 function useFilteredStandards(state, grade) {
   const allStandards = useMemo(() => getAllStandards(), []);
@@ -89,7 +89,7 @@ export function StandardSearchField({ selectedId, onSelect, state = 'all', grade
               >
                 <span className="standard-option-top">
                   <span className="standard-option-code">{standard.code}</span>
-                  <span className="standard-option-grade">Grade {standard.grade}</span>
+                  <span className="standard-option-grade">{gradeLabel(standard.grade)}</span>
                 </span>
                 <span className="standard-option-desc">{standard.description}</span>
               </button>

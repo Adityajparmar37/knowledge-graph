@@ -4,7 +4,14 @@ import StudentSelector from './components/StudentSelector.jsx';
 import StandardGraph from './components/StandardGraph.jsx';
 import SubjectSkillGraph from './components/SubjectSkillGraph.jsx';
 import NodeDetailPage from './components/NodeDetailPage.jsx';
-import { getAllStandards, getAllSubjects, getAllSkills, getStandard, getSubject } from './lib/graphStore.js';
+import {
+  getAllStandards,
+  getAllSubjects,
+  getAllSkills,
+  getStandard,
+  getSubject,
+  gradeLabel,
+} from './lib/graphStore.js';
 import { getSkillOwner } from './lib/traverse.js';
 
 export default function App() {
@@ -184,7 +191,7 @@ export default function App() {
                 <option value="all">All grades</option>
                 {grades.map((grade) => (
                   <option key={grade} value={grade}>
-                    Grade {grade}
+                    {gradeLabel(grade)}
                   </option>
                 ))}
               </select>

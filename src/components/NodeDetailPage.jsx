@@ -1,4 +1,5 @@
 import { getNodeDetail } from '../lib/traverse.js';
+import { gradeLabel } from '../lib/graphStore.js';
 import {
   getSkillAggregateStatus,
   getSkillStatus,
@@ -95,7 +96,7 @@ export default function NodeDetailPage({ kind, id, studentId, onNavigate, onBack
       <header className="node-detail-header">
         <div className="node-detail-header-top">
           <span className="node-detail-kind-badge">{KIND_LABEL[detail.kind] || detail.kind}</span>
-          {grade != null && <span className="node-detail-grade-badge">Grade {grade}</span>}
+          {grade != null && <span className="node-detail-grade-badge">{gradeLabel(grade)}</span>}
           <StatusBadge status={status} />
           {aggregateStatus && aggregateStatus !== status && (
             <span className="node-detail-status-aside">(incl. sub-skills: {STATUS_LABEL[aggregateStatus]})</span>
