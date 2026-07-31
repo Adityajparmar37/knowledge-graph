@@ -1,9 +1,13 @@
-import { useCallback, useMemo, useState } from 'react';
-import { StandardSearchField, StandardPicker } from './components/StandardSelector.jsx';
-import StudentSelector from './components/StudentSelector.jsx';
-import StandardGraph from './components/StandardGraph.jsx';
-import SubjectSkillGraph from './components/SubjectSkillGraph.jsx';
-import NodeDetailPage from './components/NodeDetailPage.jsx';
+import { useCallback, useMemo, useState } from "react";
+import {
+  StandardSearchField,
+  StandardPicker,
+} from "./components/StandardSelector.jsx";
+import StudentSelector from "./components/StudentSelector.jsx";
+import StandardGraph from "./components/StandardGraph.jsx";
+import SubjectSkillGraph from "./components/SubjectSkillGraph.jsx";
+import NodeDetailPage from "./components/NodeDetailPage.jsx";
+import DiagnosePage from "./components/DiagnosePage.jsx";
 import {
   getAllStandards,
   getAllSubjects,
@@ -11,13 +15,13 @@ import {
   getStandard,
   getSubject,
   gradeLabel,
-} from './lib/graphStore.js';
-import { getSkillOwner } from './lib/traverse.js';
+} from "./lib/graphStore.js";
+import { getSkillOwner } from "./lib/traverse.js";
 
 export default function App() {
   const [selectedStandardId, setSelectedStandardId] = useState(null);
-  const [stateFilter, setStateFilter] = useState('all');
-  const [gradeFilter, setGradeFilter] = useState('all');
+  const [stateFilter, setStateFilter] = useState("all");
+  const [gradeFilter, setGradeFilter] = useState("all");
 
   const [selectedSubjectId, setSelectedSubjectId] = useState(null);
   const [selectedSubjectName, setSelectedSubjectName] = useState(null);
@@ -32,22 +36,30 @@ export default function App() {
   // "explorer" is the existing 3-panel click-to-expand view; "nodeDetail" is
   // the standalone "everything about this node" page. detailNode is only
   // meaningful while activeView === "nodeDetail".
-  const [activeView, setActiveView] = useState('explorer');
+  const [activeView, setActiveView] = useState("explorer");
   const [detailNode, setDetailNode] = useState(null); // { kind: "standard"|"subject"|"skill", id: string }
 
   const states = useMemo(
-    () => [...new Set(getAllStandards().map((standard) => standard.jurisdiction))].sort(),
-    []
+    () =>
+      [
+        ...new Set(getAllStandards().map((standard) => standard.jurisdiction)),
+      ].sort(),
+    [],
   );
 
   const grades = useMemo(
-    () => [...new Set(getAllStandards().map((standard) => standard.grade))].sort((a, b) => a - b),
-    []
+    () =>
+      [...new Set(getAllStandards().map((standard) => standard.grade))].sort(
+        (a, b) => a - b,
+      ),
+    [],
   );
 
   const dataCounts = useMemo(() => {
     const allSkills = getAllSkills();
-    const subSkillIds = new Set(allSkills.flatMap((skill) => skill.subSkillIds || []));
+    const subSkillIds = new Set(
+      allSkills.flatMap((skill) => skill.subSkillIds || []),
+    );
     return {
       standards: getAllStandards().length,
       subjects: getAllSubjects().length,
@@ -112,23 +124,30 @@ export default function App() {
   // detail page itself to keep navigating the graph via its chips.
   const handleOpenNodeDetail = useCallback((kind, id) => {
     setDetailNode({ kind, id });
-    setActiveView('nodeDetail');
+    setActiveView("nodeDetail");
   }, []);
 
   const handleBackToExplorer = useCallback(() => {
-    setActiveView('explorer');
+    setActiveView("explorer");
   }, []);
 
-  const selectedStandard = selectedStandardId ? getStandard(selectedStandardId) : null;
+  const handleOpenDiagnose = useCallback(() => {
+    setActiveView("diagnose");
+  }, []);
+
+  const selectedStandard = selectedStandardId
+    ? getStandard(selectedStandardId)
+    : null;
 
   return (
     <div className="app-shell">
       <header className="app-header">
         <h1>Standards &amp; Skills Explorer</h1>
         <p>
-          Pick a standard, click through its breakdown, and drill into a subject's skills to see
-          worked examples and pass criteria. Track a student to see live pass/fail status and
-          auto-diagnostic drill-downs on failed skills.
+          Pick a standard, click through its breakdown, and drill into a
+          subject's skills to see worked examples and pass criteria. Track a
+          student to see live pass/fail status and auto-diagnostic drill-downs
+          on failed skills.
         </p>
 
         <ul className="data-counts">
@@ -146,7 +165,7 @@ export default function App() {
           </li>
         </ul>
 
-        {activeView === 'explorer' && (
+        {activeView === "explorer" && (
           <div className="app-header-controls">
             <StandardSearchField
               selectedId={selectedStandardId}
@@ -163,8 +182,7 @@ export default function App() {
                 id="standard-state"
                 className="standard-state-select"
                 value={stateFilter}
-                onChange={(evt) => handleStateFilterChange(evt.target.value)}
-              >
+                onChange={(evt) => handleStateFilterChange(evt.target.value)}>
                 <option value="all">All states</option>
                 {states.map((jurisdiction) => (
                   <option key={jurisdiction} value={jurisdiction}>
@@ -184,10 +202,11 @@ export default function App() {
                 value={gradeFilter}
                 onChange={(evt) =>
                   handleGradeFilterChange(
-                    evt.target.value === 'all' ? 'all' : Number(evt.target.value)
+                    evt.target.value === "all"
+                      ? "all"
+                      : Number(evt.target.value),
                   )
-                }
-              >
+                }>
                 <option value="all">All grades</option>
                 {grades.map((grade) => (
                   <option key={grade} value={grade}>
@@ -204,22 +223,41 @@ export default function App() {
               grade={gradeFilter}
             />
 
-            <StudentSelector selectedId={selectedStudentId} onSelect={handleSelectStudent} />
+            <StudentSelector
+              selectedId={selectedStudentId}
+              onSelect={handleSelectStudent}
+            />
+
+            <button
+              type="button"
+              className="node-detail-view-btn diagnose-entry-btn"
+              onClick={handleOpenDiagnose}
+              title="Diagnose a student">
+              🩺
+            </button>
           </div>
         )}
 
-        {activeView === 'explorer' && selectedStandard && (
+        {activeView === "explorer" && selectedStandard && (
           <div className="standard-selected-summary">
-            <div className="standard-selected-code">{selectedStandard.code}</div>
-            <div className="standard-selected-desc">{selectedStandard.description}</div>
+            <div className="standard-selected-code">
+              {selectedStandard.code}
+            </div>
+            <div className="standard-selected-desc">
+              {selectedStandard.description}
+            </div>
           </div>
         )}
 
-        {activeView === 'explorer' && selectedStudentId && (
+        {activeView === "explorer" && selectedStudentId && (
           <ul className="status-legend">
             <li>
               <span className="status-legend-swatch status-legend-pass" />
               Passed
+            </li>
+            <li>
+              <span className="status-legend-swatch status-legend-partial" />
+              Partially good
             </li>
             <li>
               <span className="status-legend-swatch status-legend-fail" />
@@ -233,7 +271,7 @@ export default function App() {
         )}
       </header>
 
-      {activeView === 'nodeDetail' && detailNode ? (
+      {activeView === "nodeDetail" && detailNode ? (
         <NodeDetailPage
           kind={detailNode.kind}
           id={detailNode.id}
@@ -241,6 +279,8 @@ export default function App() {
           onNavigate={handleOpenNodeDetail}
           onBack={handleBackToExplorer}
         />
+      ) : activeView === "diagnose" ? (
+        <DiagnosePage onBack={handleBackToExplorer} />
       ) : (
         <div className="panel-grid">
           <section className="panel panel-graph">
@@ -251,9 +291,11 @@ export default function App() {
                   type="button"
                   className="node-detail-view-btn"
                   onClick={() =>
-                    handleOpenNodeDetail(standardPanelSelection.kind, standardPanelSelection.id)
-                  }
-                >
+                    handleOpenNodeDetail(
+                      standardPanelSelection.kind,
+                      standardPanelSelection.id,
+                    )
+                  }>
                   View full details →
                 </button>
               )}
@@ -271,16 +313,19 @@ export default function App() {
           <section className="panel panel-graph">
             <div className="panel-title-row">
               <h2 className="panel-title">
-                Subject Detail{selectedSubjectName ? ` — ${selectedSubjectName}` : ''}
+                Subject Detail
+                {selectedSubjectName ? ` — ${selectedSubjectName}` : ""}
               </h2>
               {subjectPanelSelection && (
                 <button
                   type="button"
                   className="node-detail-view-btn"
                   onClick={() =>
-                    handleOpenNodeDetail(subjectPanelSelection.kind, subjectPanelSelection.id)
-                  }
-                >
+                    handleOpenNodeDetail(
+                      subjectPanelSelection.kind,
+                      subjectPanelSelection.id,
+                    )
+                  }>
                   View full details →
                 </button>
               )}

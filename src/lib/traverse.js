@@ -302,6 +302,57 @@ export function getSubjectDomain(subjectId) {
   return (subject && subject.domain) || null;
 }
 
+/**
+ * Builds a diagnostic "remediation path" for a skill a teacher has just
+ * flagged as failing: its sibling skills in the same Subject (foundational
+ * pieces of the same cluster worth shoring up alongside it) plus the
+ * owning Standard's real grade-progression chain (`buildsFrom`, walked
+ * backward through however many grades exist) — the earlier-grade
+ * material worth reviewing. There's no skill-level prerequisite graph in
+ * the real imported data, so this is the closest real-data equivalent.
+ * @param {string} skillId
+ * @returns {{
+ *   skill: object,
+ *   subjectId: string|null,
+ *   subjectName: string|null,
+ *   standardId: string|null,
+ *   siblings: object[],
+ *   gradeChain: { id: string, code: string, description: string, grade: number }[],
+ * } | null}
+ */
+export function getRemediationPath(skillId) {
+  const skill = getSkillSummary(skillId);
+  if (!skill) return null;
+
+  const owner = getSkillOwner(skillId);
+  const subject = owner ? getSubjectSkillSummary(owner.subjectId) : null;
+  const siblings = subject ? subject.skills.filter((s) => s.id !== skillId) : [];
+
+  const gradeChain = [];
+  if (owner) {
+    let current = getStandard(owner.standardId);
+    const seen = new Set([owner.standardId]);
+    while (current && (current.buildsFrom || []).length > 0) {
+      const prevId = current.buildsFrom[0];
+      if (seen.has(prevId)) break;
+      seen.add(prevId);
+      const prev = getStandard(prevId);
+      if (!prev) break;
+      gradeChain.push({ id: prev.id, code: prev.code, description: prev.description, grade: prev.grade });
+      current = prev;
+    }
+  }
+
+  return {
+    skill,
+    subjectId: owner ? owner.subjectId : null,
+    subjectName: subject ? subject.name : null,
+    standardId: owner ? owner.standardId : null,
+    siblings,
+    gradeChain,
+  };
+}
+
 function toNodeChip(kind, id, label) {
   return { kind, id, label };
 }

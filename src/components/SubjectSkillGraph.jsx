@@ -12,6 +12,7 @@ import {
   COLOR_ACCENT_SUBJECT,
   COLOR_ACCENT_PASS,
   COLOR_ACCENT_FAIL,
+  COLOR_ACCENT_PARTIAL,
   COLOR_ACCENT_IMPROVE,
   COLOR_ACCENT_LINK,
   COLOR_PANEL_BORDER,
@@ -23,7 +24,7 @@ import {
 
 cytoscape.use(dagre);
 
-const STATUS_ICON = { pass: '✅', fail: '❌', unattempted: '–' };
+const STATUS_ICON = { pass: '✅', partial: '🟠', fail: '❌', unattempted: '–' };
 
 const SUBJECT_SKILL_GRAPH_LEGEND = [
   { kind: 'node', color: COLOR_ACCENT_SUBJECT, label: 'Subject' },
@@ -34,6 +35,7 @@ const SUBJECT_SKILL_GRAPH_LEGEND = [
   { kind: 'line', color: COLOR_ACCENT_LINK, lineStyle: 'dashed', label: 'Worked example' },
   { kind: 'line', color: COLOR_ACCENT_LINK, lineStyle: 'dotted', label: 'Cross-grade link' },
   { kind: 'border', color: COLOR_ACCENT_PASS, lineStyle: 'solid', label: 'Passed' },
+  { kind: 'border', color: COLOR_ACCENT_PARTIAL, lineStyle: 'solid', label: 'Partially good' },
   { kind: 'border', color: COLOR_ACCENT_FAIL, lineStyle: 'solid', label: 'Failed' },
   { kind: 'border', color: COLOR_ACCENT_IMPROVE, lineStyle: 'dashed', label: 'Unattempted' },
 ];
@@ -267,6 +269,10 @@ export default function SubjectSkillGraph({
         {
           selector: 'node[status = "pass"]',
           style: { 'border-width': 4, 'border-color': COLOR_ACCENT_PASS, 'border-style': 'solid' },
+        },
+        {
+          selector: 'node[status = "partial"]',
+          style: { 'border-width': 4, 'border-color': COLOR_ACCENT_PARTIAL, 'border-style': 'solid' },
         },
         {
           selector: 'node[status = "fail"]',

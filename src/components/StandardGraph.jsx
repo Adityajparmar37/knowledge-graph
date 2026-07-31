@@ -10,6 +10,7 @@ import {
   COLOR_ACCENT_SUBJECT,
   COLOR_ACCENT_PASS,
   COLOR_ACCENT_FAIL,
+  COLOR_ACCENT_PARTIAL,
   COLOR_ACCENT_IMPROVE,
   COLOR_ACCENT_LINK,
   COLOR_PANEL_BORDER,
@@ -30,11 +31,12 @@ const STANDARD_GRAPH_LEGEND = [
   { kind: 'line', color: COLOR_EDGE_DEFAULT, lineStyle: 'solid', label: 'Structure' },
   { kind: 'line', color: COLOR_ACCENT_LINK, lineStyle: 'solid', label: 'Builds toward next standard' },
   { kind: 'border', color: COLOR_ACCENT_PASS, lineStyle: 'solid', label: 'Passed (tracked student)' },
+  { kind: 'border', color: COLOR_ACCENT_PARTIAL, lineStyle: 'solid', label: 'Partially good' },
   { kind: 'border', color: COLOR_ACCENT_FAIL, lineStyle: 'solid', label: 'Failed (tracked student)' },
   { kind: 'border', color: COLOR_ACCENT_IMPROVE, lineStyle: 'dashed', label: 'Unattempted' },
 ];
 
-const STATUS_ICON = { pass: '✅', fail: '❌', unattempted: '–' };
+const STATUS_ICON = { pass: '✅', partial: '🟠', fail: '❌', unattempted: '–' };
 
 function statusLabel(baseLabel, studentId, status) {
   if (!studentId) return baseLabel;
@@ -241,6 +243,10 @@ export default function StandardGraph({
         {
           selector: 'node[status = "pass"]',
           style: { 'border-width': 4, 'border-color': COLOR_ACCENT_PASS },
+        },
+        {
+          selector: 'node[status = "partial"]',
+          style: { 'border-width': 4, 'border-color': COLOR_ACCENT_PARTIAL },
         },
         {
           selector: 'node[status = "fail"]',

@@ -17,6 +17,7 @@
   --color-accent-subskill: #f472b6;
   --color-accent-pass: #34d399;
   --color-accent-fail: #f87171;
+  --color-accent-partial: #fb923c;
   --color-accent-link: #fbbf24;
   --color-accent-link-text: #92400e;
   --color-accent-improve: #a78bfa;
@@ -29,12 +30,17 @@
   --color-text-muted: var(--color-ink-muted);
   --color-accent: var(--color-accent-subject);
 
-  --font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --font-heading: 'Space Grotesk', 'Inter', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  --font-body:
+    "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-heading: "Space Grotesk", "Inter", system-ui, sans-serif;
+  --font-mono:
+    "JetBrains Mono", "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+    monospace;
 
-  --shadow-panel: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.08);
-  --glow-accent: 0 0 0 1px rgba(56, 189, 248, 0.2), 0 0 24px rgba(56, 189, 248, 0.1);
+  --shadow-panel:
+    0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.08);
+  --glow-accent:
+    0 0 0 1px rgba(56, 189, 248, 0.2), 0 0 24px rgba(56, 189, 248, 0.1);
   --radius-panel: 16px;
   --radius-control: 10px;
 }
@@ -70,6 +76,7 @@ body {
 }
 
 .app-header {
+  position: relative;
   margin-bottom: 28px;
 }
 
@@ -238,7 +245,9 @@ body {
   border: 1px solid var(--color-panel-border);
   border-radius: var(--radius-control);
   outline: none;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .standard-state-select,
@@ -253,7 +262,9 @@ body {
   border: 1px solid var(--color-panel-border);
   border-radius: var(--radius-control);
   outline: none;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    box-shadow 0.15s ease;
 }
 
 .standard-state-select:focus,
@@ -364,7 +375,10 @@ body {
   font-size: 12.5px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
 }
 
 .standard-chip:hover {
@@ -429,6 +443,10 @@ body {
   border-color: var(--color-accent-pass);
 }
 
+.status-legend-partial {
+  border-color: var(--color-accent-partial);
+}
+
 .status-legend-fail {
   border-color: var(--color-accent-fail);
 }
@@ -467,7 +485,10 @@ body {
   font-size: 12.5px;
   font-weight: 600;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
 }
 
 .student-chip:hover {
@@ -505,7 +526,8 @@ body {
   border: 1px solid var(--color-panel-border);
   border-radius: var(--radius-control);
   background-color: var(--color-surface);
-  background-image: linear-gradient(var(--color-grid-line) 1px, transparent 1px),
+  background-image:
+    linear-gradient(var(--color-grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--color-grid-line) 1px, transparent 1px);
   background-size: 24px 24px;
   background-position: -1px -1px;
@@ -513,7 +535,8 @@ body {
 
 .node-detail-graph-canvas {
   background-color: var(--color-surface);
-  background-image: linear-gradient(var(--color-grid-line) 1px, transparent 1px),
+  background-image:
+    linear-gradient(var(--color-grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--color-grid-line) 1px, transparent 1px);
   background-size: 24px 24px;
   background-position: -1px -1px;
@@ -549,7 +572,10 @@ body {
   font-weight: 700;
   line-height: 1;
   cursor: pointer;
-  transition: background 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease;
 }
 
 .graph-control-btn:hover {
@@ -640,7 +666,8 @@ body {
   border: 1px dashed var(--color-panel-border);
   border-radius: var(--radius-control);
   background-color: var(--color-surface);
-  background-image: linear-gradient(var(--color-grid-line) 1px, transparent 1px),
+  background-image:
+    linear-gradient(var(--color-grid-line) 1px, transparent 1px),
     linear-gradient(90deg, var(--color-grid-line) 1px, transparent 1px);
   background-size: 24px 24px;
 }
@@ -737,11 +764,104 @@ body {
   font-weight: 700;
   cursor: pointer;
   white-space: nowrap;
-  transition: background 0.15s ease, filter 0.15s ease;
+  transition:
+    background 0.15s ease,
+    filter 0.15s ease;
 }
 
 .node-detail-view-btn:hover {
   filter: brightness(1.1);
+}
+
+.node-detail-view-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: none;
+}
+
+.diagnose-entry-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 56px;
+  height: 56px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-accent-fail);
+  font-size: 22px;
+  border-radius: 12px;
+  white-space: normal;
+}
+
+/* ---------- Diagnose page ---------- */
+
+.diagnose-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.diagnose-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.diagnose-field {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.diagnose-submit-btn {
+  align-self: flex-start;
+  padding: 10px 18px;
+  font-size: 13.5px;
+}
+
+.diagnose-graph-panel .graph-canvas-wrapper {
+  height: min(60vh, 560px);
+}
+
+.diagnose-hover-controls {
+  position: absolute;
+  transform: translate(-50%, -140%);
+  display: flex;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--color-panel-border);
+  border-radius: 999px;
+  padding: 5px;
+  box-shadow: var(--shadow-panel);
+  z-index: 30;
+  pointer-events: auto;
+}
+
+.diagnose-hover-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 50%;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+  transition: filter 0.15s ease;
+}
+
+.diagnose-hover-btn:hover {
+  filter: brightness(1.1);
+}
+
+.diagnose-hover-pass {
+  background: var(--color-accent-pass);
+}
+
+.diagnose-hover-fail {
+  background: var(--color-accent-fail);
 }
 
 /* ---------- Node Detail page ---------- */
@@ -762,7 +882,9 @@ body {
   font-size: 13px;
   font-weight: 600;
   cursor: pointer;
-  transition: border-color 0.15s ease, color 0.15s ease;
+  transition:
+    border-color 0.15s ease,
+    color 0.15s ease;
 }
 
 .node-detail-back-btn:hover {
@@ -816,6 +938,11 @@ body {
 .node-detail-status-pass {
   background: rgba(52, 211, 153, 0.16);
   color: var(--color-accent-pass);
+}
+
+.node-detail-status-partial {
+  background: rgba(251, 146, 60, 0.16);
+  color: var(--color-accent-partial);
 }
 
 .node-detail-status-fail {

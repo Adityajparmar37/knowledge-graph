@@ -60,14 +60,22 @@ function buildElements(detail) {
     { data: { id, label: name, kind, isCenter: true } },
   ];
   const seen = new Set([id]);
+  // Guards against the same two nodes getting wired twice — e.g. a skill
+  // that's both a prerequisite and a cross-grade linked skill of the center
+  // node would otherwise get two separate edges drawn on top of each other.
+  const seenEdgePairs = new Set();
 
-  function addNode(item) {
+  function addNode(item, labelSuffix) {
     if (seen.has(item.id)) return;
     seen.add(item.id);
-    elements.push({ data: { id: item.id, label: item.label, kind: item.kind } });
+    const label = labelSuffix ? `${item.label} · ${labelSuffix}` : item.label;
+    elements.push({ data: { id: item.id, label, kind: item.kind } });
   }
 
   function addEdge(sourceId, targetId, edgeKind, label) {
+    const pairKey = [sourceId, targetId].sort().join('::');
+    if (seenEdgePairs.has(pairKey)) return;
+    seenEdgePairs.add(pairKey);
     elements.push({
       data: {
         id: `${sourceId}->${targetId}::${edgeKind}::${elements.length}`,
@@ -107,17 +115,17 @@ function buildElements(detail) {
   });
 
   if (linkedSkill) {
-    addNode(linkedSkill);
     const owner = getSkillOwner(linkedSkill.id);
     const ownerStandard = owner ? getStandard(owner.standardId) : null;
+    addNode(linkedSkill, ownerStandard ? ownerStandard.jurisdiction : null);
     const label = ownerStandard ? `linked (grade ${ownerStandard.grade})` : 'linked to';
     addEdge(id, linkedSkill.id, 'linked-skill', label);
   }
 
   reverseLinkedSkills.forEach((item) => {
-    addNode(item);
     const owner = getSkillOwner(item.id);
     const ownerStandard = owner ? getStandard(owner.standardId) : null;
+    addNode(item, ownerStandard ? ownerStandard.jurisdiction : null);
     const label = ownerStandard ? `linked (grade ${ownerStandard.grade})` : 'linked from';
     addEdge(item.id, id, 'linked-skill', label);
   });

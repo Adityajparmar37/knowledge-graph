@@ -36,6 +36,9 @@ export const COLOR_ACCENT_FAIL = '#F87171';
 export const COLOR_ACCENT_LINK = '#FBBF24';
 /** Purple — marks an unattempted node: not failed yet, but room to improve. */
 export const COLOR_ACCENT_IMPROVE = '#A78BFA';
+/** Orange — marks a "partial" attempt: neither a clean pass nor a fail,
+ * some parts right and some wrong. */
+export const COLOR_ACCENT_PARTIAL = '#FB923C';
 
 export const KIND_COLOR = {
   standard: COLOR_ACCENT_STANDARD,

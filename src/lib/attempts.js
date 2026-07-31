@@ -48,6 +48,27 @@ export function toggleSkillPassOverride(studentId, skillId) {
 }
 
 /**
+ * Explicitly sets (rather than toggles) a skill's status override for one
+ * student — used by the teacher-facing diagnose/remediation flow, where a
+ * tick/cross click sets a definite "pass" or "fail" rather than flipping
+ * between two states. Pass `null` to clear the override back to the seed
+ * data. Persisted the same way as toggleSkillPassOverride.
+ * @param {string|null} studentId
+ * @param {string} skillId
+ * @param {"pass"|"partial"|"fail"|null} status
+ */
+export function setSkillStatusOverride(studentId, skillId, status) {
+  if (!studentId || !skillId) return;
+  const overrides = readOverrides(studentId);
+  if (status) {
+    overrides[skillId] = status;
+  } else {
+    delete overrides[skillId];
+  }
+  writeOverrides(studentId, overrides);
+}
+
+/**
  * Per-student, per-skill pass/fail lookup. Any skill/sub-skill id absent
  * from a student's record is treated as "unattempted" rather than an
  * error, so partially-seeded students never crash the UI. A localStorage
@@ -56,7 +77,7 @@ export function toggleSkillPassOverride(studentId, skillId) {
  *
  * @param {string|null} studentId
  * @param {string} skillId
- * @returns {"pass" | "fail" | "unattempted"}
+ * @returns {"pass" | "partial" | "fail" | "unattempted"}
  */
 export function getSkillStatus(studentId, skillId) {
   if (!studentId || !skillId) return 'unattempted';
@@ -69,17 +90,19 @@ export function getSkillStatus(studentId, skillId) {
 
 /**
  * Combines a list of statuses into one aggregate: "fail" wins if any
- * descendant failed; otherwise "pass" if every attempted descendant
- * passed; otherwise "unattempted" (nothing attempted, or a mix that never
- * included a fail but also never fully passed because some are untried).
- * @param {("pass"|"fail"|"unattempted")[]} statuses
- * @returns {"pass" | "fail" | "unattempted"}
+ * descendant failed; else "partial" if any descendant is partial (or the
+ * attempted set is a mix of pass/fail-free but inconsistent); else "pass"
+ * if every attempted descendant passed; else "unattempted" (nothing
+ * attempted at all).
+ * @param {("pass"|"partial"|"fail"|"unattempted")[]} statuses
+ * @returns {"pass" | "partial" | "fail" | "unattempted"}
  */
 function aggregateStatuses(statuses) {
   if (statuses.includes('fail')) return 'fail';
+  if (statuses.includes('partial')) return 'partial';
   const attempted = statuses.filter((status) => status !== 'unattempted');
   if (attempted.length === 0) return 'unattempted';
-  return attempted.every((status) => status === 'pass') ? 'pass' : 'unattempted';
+  return attempted.every((status) => status === 'pass') ? 'pass' : 'partial';
 }
 
 /**
@@ -106,7 +129,7 @@ function collectSkillAndDescendantIds(skillId, seen = new Set()) {
  * unattempted but a sub-skill underneath it failed.
  * @param {string|null} studentId
  * @param {string} skillId
- * @returns {"pass" | "fail" | "unattempted"}
+ * @returns {"pass" | "partial" | "fail" | "unattempted"}
  */
 export function getSkillAggregateStatus(studentId, skillId) {
   if (!studentId) return 'unattempted';
@@ -118,7 +141,7 @@ export function getSkillAggregateStatus(studentId, skillId) {
  * Aggregate status for every skill under a subject, "fail" wins overall.
  * @param {string|null} studentId
  * @param {string} subjectId
- * @returns {"pass" | "fail" | "unattempted"}
+ * @returns {"pass" | "partial" | "fail" | "unattempted"}
  */
 export function getSubjectStatus(studentId, subjectId) {
   if (!studentId) return 'unattempted';
@@ -133,7 +156,7 @@ export function getSubjectStatus(studentId, subjectId) {
  * Aggregate status for every subject under a standard.
  * @param {string|null} studentId
  * @param {string} standardId
- * @returns {"pass" | "fail" | "unattempted"}
+ * @returns {"pass" | "partial" | "fail" | "unattempted"}
  */
 export function getStandardStatus(studentId, standardId) {
   if (!studentId) return 'unattempted';
@@ -147,9 +170,10 @@ export function getStandardStatus(studentId, standardId) {
 /**
  * Walks a subject's skill tree for one student and returns the set of
  * skill/sub-skill ids that should be auto-revealed because they (or an
- * ancestor along the same branch) failed: a node's children only get
- * auto-expanded when that node's own attempt is "fail" and it has
- * children to drill into. Passed or unattempted nodes never auto-expand.
+ * ancestor along the same branch) need attention: a node's children only
+ * get auto-expanded when that node's own attempt is "fail" or "partial"
+ * and it has children to drill into. Passed or unattempted nodes never
+ * auto-expand.
  * @param {string|null} studentId
  * @param {{ skills: object[] } | null} subject - result of getSubjectSkillSummary
  * @returns {Set<string>}
@@ -162,7 +186,7 @@ export function getAutoExpandIds(studentId, subject) {
     const skill = getSkill(skillId);
     if (!skill) return;
     const status = getSkillStatus(studentId, skillId);
-    if (status === 'fail' && (skill.subSkillIds || []).length > 0) {
+    if ((status === 'fail' || status === 'partial') && (skill.subSkillIds || []).length > 0) {
       expandIds.add(skillId);
       for (const subId of skill.subSkillIds) walk(subId);
     }

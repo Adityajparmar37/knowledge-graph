@@ -28,8 +28,8 @@ const NODE_DETAIL_LEGEND = [
   { kind: 'line', color: COLOR_ACCENT_LINK, lineStyle: 'dotted', label: 'Cross-grade link' },
 ];
 
-const STATUS_ICON = { pass: '✅', fail: '❌', unattempted: '–' };
-const STATUS_LABEL = { pass: 'Passing', fail: 'Failing', unattempted: 'Unattempted' };
+const STATUS_ICON = { pass: '✅', partial: '🟠', fail: '❌', unattempted: '–' };
+const STATUS_LABEL = { pass: 'Passing', partial: 'Partially good', fail: 'Failing', unattempted: 'Unattempted' };
 const KIND_LABEL = { standard: 'Standard', subject: 'Subject', skill: 'Skill / Sub-skill' };
 
 function StatusBadge({ status }) {
@@ -74,7 +74,7 @@ export default function NodeDetailPage({ kind, id, studentId, onNavigate, onBack
     );
   }
 
-  const { own, name, grade, children, domain, cluster } = detail;
+  const { own, name, grade, children, domain, cluster, prerequisites, buildsToward } = detail;
 
   let status = 'none';
   if (studentId) {
@@ -134,7 +134,9 @@ export default function NodeDetailPage({ kind, id, studentId, onNavigate, onBack
 
           {(typeof own.subjectIds !== 'undefined' ||
             typeof own.skillIds !== 'undefined' ||
-            typeof own.subSkillIds !== 'undefined') && (
+            typeof own.subSkillIds !== 'undefined' ||
+            prerequisites.length > 0 ||
+            buildsToward.length > 0) && (
             <dl className="node-detail-info-block">
               <dt>Structure</dt>
               <dd className="node-detail-stat-count">
@@ -142,6 +144,14 @@ export default function NodeDetailPage({ kind, id, studentId, onNavigate, onBack
                 {typeof own.skillIds !== 'undefined' && `${own.skillIds.length} skill(s)`}
                 {typeof own.subSkillIds !== 'undefined' && `${own.subSkillIds.length} sub-skill(s)`}
               </dd>
+              {prerequisites.length > 0 && (
+                <dd className="node-detail-stat-count">
+                  {prerequisites.length} matching prerequisite(s)
+                </dd>
+              )}
+              {buildsToward.length > 0 && (
+                <dd className="node-detail-stat-count">{buildsToward.length} builds toward (ahead)</dd>
+              )}
             </dl>
           )}
 
