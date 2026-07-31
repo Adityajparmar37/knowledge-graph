@@ -783,16 +783,29 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  width: 56px;
-  height: 56px;
-  padding: 0;
+  width: 72px;
+  height: 72px;
+  padding: 6px 4px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 2px;
   background: var(--color-accent-fail);
-  font-size: 22px;
   border-radius: 12px;
   white-space: normal;
+}
+
+.diagnose-entry-icon {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.diagnose-entry-label {
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
 }
 
 /* ---------- Diagnose page ---------- */

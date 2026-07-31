@@ -233,7 +233,8 @@ export default function App() {
               className="node-detail-view-btn diagnose-entry-btn"
               onClick={handleOpenDiagnose}
               title="Diagnose a student">
-              🩺
+              <span className="diagnose-entry-icon">🩺</span>
+              <span className="diagnose-entry-label">Diagnose a student</span>
             </button>
           </div>
         )}
