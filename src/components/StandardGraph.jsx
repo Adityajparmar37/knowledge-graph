@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import cytoscape from 'cytoscape';
 import dagre from 'cytoscape-dagre';
+import GraphLegend from './GraphLegend.jsx';
 import { getStandard } from '../lib/graphStore.js';
 import { getStandardSubjectSummaries, getNextStandardOptions } from '../lib/traverse.js';
 import { getStandardStatus, getSubjectStatus } from '../lib/attempts.js';
@@ -22,6 +23,16 @@ import {
 cytoscape.use(dagre);
 
 const SUBJECTS_LABEL_KIND = 'subjects-label';
+
+const STANDARD_GRAPH_LEGEND = [
+  { kind: 'node', color: COLOR_ACCENT_STANDARD, label: 'Standard' },
+  { kind: 'node', color: COLOR_ACCENT_SUBJECT, label: 'Subject' },
+  { kind: 'line', color: COLOR_EDGE_DEFAULT, lineStyle: 'solid', label: 'Structure' },
+  { kind: 'line', color: COLOR_ACCENT_LINK, lineStyle: 'solid', label: 'Builds toward next standard' },
+  { kind: 'border', color: COLOR_ACCENT_PASS, lineStyle: 'solid', label: 'Passed (tracked student)' },
+  { kind: 'border', color: COLOR_ACCENT_FAIL, lineStyle: 'solid', label: 'Failed (tracked student)' },
+  { kind: 'border', color: COLOR_ACCENT_IMPROVE, lineStyle: 'dashed', label: 'Unattempted' },
+];
 
 const STATUS_ICON = { pass: '✅', fail: '❌', unattempted: '–' };
 
@@ -435,6 +446,7 @@ export default function StandardGraph({
         Click the standard to reveal its subjects, then click "Subjects" to fan them out and see
         what this standard builds toward. Click a subject to explore its skills on the right.
       </p>
+      <GraphLegend items={STANDARD_GRAPH_LEGEND} />
     </div>
   );
 }

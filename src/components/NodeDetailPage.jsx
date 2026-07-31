@@ -6,6 +6,26 @@ import {
   getSubjectStatus,
 } from '../lib/attempts.js';
 import NodeDetailGraph from './NodeDetailGraph.jsx';
+import GraphLegend from './GraphLegend.jsx';
+import {
+  COLOR_ACCENT_STANDARD,
+  COLOR_ACCENT_SUBJECT,
+  COLOR_ACCENT_SKILL,
+  COLOR_ACCENT_LINK,
+  COLOR_EDGE_DEFAULT,
+  COLOR_INK_MUTED,
+} from '../lib/theme.js';
+
+const NODE_DETAIL_LEGEND = [
+  { kind: 'node', color: COLOR_ACCENT_STANDARD, label: 'Standard' },
+  { kind: 'node', color: COLOR_ACCENT_SUBJECT, label: 'Subject' },
+  { kind: 'node', color: COLOR_ACCENT_SKILL, label: 'Skill / Sub-skill' },
+  { kind: 'node', color: COLOR_INK_MUTED, label: 'Related node (uncategorized)' },
+  { kind: 'line', color: COLOR_EDGE_DEFAULT, lineStyle: 'solid', label: 'Structural relation' },
+  { kind: 'line', color: COLOR_ACCENT_STANDARD, lineStyle: 'solid', label: 'Prerequisite' },
+  { kind: 'line', color: COLOR_ACCENT_SUBJECT, lineStyle: 'solid', label: 'Grade progression' },
+  { kind: 'line', color: COLOR_ACCENT_LINK, lineStyle: 'dotted', label: 'Cross-grade link' },
+];
 
 const STATUS_ICON = { pass: '✅', fail: '❌', unattempted: '–' };
 const STATUS_LABEL = { pass: 'Passing', fail: 'Failing', unattempted: 'Unattempted' };
@@ -91,6 +111,7 @@ export default function NodeDetailPage({ kind, id, studentId, onNavigate, onBack
           <p className="graph-hint">
             Click any surrounding node to re-center the graph on it. Amber border = current node.
           </p>
+          <GraphLegend items={NODE_DETAIL_LEGEND} />
         </section>
 
         <aside className="node-detail-info-strip">

@@ -1,14 +1,16 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { getAllStandards } from '../lib/graphStore.js';
 
-function useJurisdictionStandards(state) {
+function useFilteredStandards(state, grade) {
   const allStandards = useMemo(() => getAllStandards(), []);
   return useMemo(
     () =>
-      state === 'all'
-        ? allStandards
-        : allStandards.filter((standard) => standard.jurisdiction === state),
-    [allStandards, state]
+      allStandards.filter(
+        (standard) =>
+          (state === 'all' || standard.jurisdiction === state) &&
+          (grade === 'all' || standard.grade === grade)
+      ),
+    [allStandards, state, grade]
   );
 }
 
@@ -20,9 +22,10 @@ function useJurisdictionStandards(state) {
  * @param {string|null} props.selectedId
  * @param {(id: string) => void} props.onSelect
  * @param {string} [props.state] - jurisdiction filter ("all" or a state name)
+ * @param {number|string} [props.grade] - grade filter ("all" or a grade number)
  */
-export function StandardSearchField({ selectedId, onSelect, state = 'all' }) {
-  const standards = useJurisdictionStandards(state);
+export function StandardSearchField({ selectedId, onSelect, state = 'all', grade = 'all' }) {
+  const standards = useFilteredStandards(state, grade);
   const [query, setQuery] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const wrapperRef = useRef(null);
@@ -106,9 +109,10 @@ export function StandardSearchField({ selectedId, onSelect, state = 'all' }) {
  * @param {string|null} props.selectedId
  * @param {(id: string) => void} props.onSelect
  * @param {string} [props.state] - jurisdiction filter ("all" or a state name)
+ * @param {number|string} [props.grade] - grade filter ("all" or a grade number)
  */
-export function StandardPicker({ selectedId, onSelect, state = 'all' }) {
-  const standards = useJurisdictionStandards(state);
+export function StandardPicker({ selectedId, onSelect, state = 'all', grade = 'all' }) {
+  const standards = useFilteredStandards(state, grade);
 
   return (
     <div className="standard-picker-field">

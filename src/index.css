@@ -107,6 +107,7 @@ body {
 }
 
 .app-header-controls .standard-state-field,
+.app-header-controls .standard-grade-field,
 .app-header-controls .standard-picker-field {
   flex: 0 0 200px;
 }
@@ -126,6 +127,7 @@ body {
 
   .app-header-controls .standard-search-field,
   .app-header-controls .standard-state-field,
+  .app-header-controls .standard-grade-field,
   .app-header-controls .standard-picker-field,
   .app-header-controls .student-selector {
     flex-basis: auto;
@@ -220,6 +222,7 @@ body {
 }
 
 .standard-state-select,
+.standard-grade-select,
 .standard-picker-select {
   width: 100%;
   padding: 10px 12px;
@@ -234,6 +237,7 @@ body {
 }
 
 .standard-state-select:focus,
+.standard-grade-select:focus,
 .standard-picker-select:focus {
   border-color: var(--color-accent-subject);
   box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.18);
@@ -538,6 +542,69 @@ body {
   font-size: 12px;
   color: var(--color-ink-muted);
   line-height: 1.5;
+}
+
+/* ---------- Graph legend (node colors + edge line styles) ---------- */
+
+.graph-legend {
+  list-style: none;
+  margin: 10px 0 0;
+  padding: 10px 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-panel-border);
+  border-radius: var(--radius-control);
+}
+
+.graph-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  color: var(--color-ink-muted);
+  white-space: nowrap;
+}
+
+.graph-legend-swatch {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.graph-legend-swatch-rect {
+  border-radius: 3px;
+}
+
+.graph-legend-swatch-line {
+  width: 20px;
+  height: 0;
+  border-radius: 0;
+  border-top-width: 2px;
+  border-top-style: solid;
+  background: none;
+}
+
+.graph-legend-line-dashed {
+  border-top-style: dashed;
+}
+
+.graph-legend-line-dotted {
+  border-top-style: dotted;
+  border-top-width: 3px;
+}
+
+.graph-legend-swatch-border {
+  background: none;
+  border: 2.5px solid;
+  box-sizing: border-box;
+}
+
+.graph-legend-border-dashed {
+  border-style: dashed;
 }
 
 .empty-panel {

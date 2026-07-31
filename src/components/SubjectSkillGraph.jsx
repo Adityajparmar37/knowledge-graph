@@ -5,6 +5,7 @@ import { getSkillSummary, getSubSkills, getSubjectSkillSummary, getSkillOwner } 
 import { getStandard } from '../lib/graphStore.js';
 import { getSkillStatus, getAutoExpandIds } from '../lib/attempts.js';
 import InfoCard from './InfoCard.jsx';
+import GraphLegend from './GraphLegend.jsx';
 import {
   COLOR_ACCENT_SKILL,
   COLOR_ACCENT_SUBSKILL,
@@ -23,6 +24,19 @@ import {
 cytoscape.use(dagre);
 
 const STATUS_ICON = { pass: '✅', fail: '❌', unattempted: '–' };
+
+const SUBJECT_SKILL_GRAPH_LEGEND = [
+  { kind: 'node', color: COLOR_ACCENT_SUBJECT, label: 'Subject' },
+  { kind: 'node', color: COLOR_ACCENT_SKILL, label: 'Skill' },
+  { kind: 'node', color: COLOR_ACCENT_SUBSKILL, label: 'Sub-skill' },
+  { kind: 'node', color: COLOR_ACCENT_LINK, shape: 'rect', label: 'Cross-grade link node' },
+  { kind: 'line', color: COLOR_EDGE_DEFAULT, lineStyle: 'solid', label: 'Structure' },
+  { kind: 'line', color: COLOR_ACCENT_LINK, lineStyle: 'dashed', label: 'Worked example' },
+  { kind: 'line', color: COLOR_ACCENT_LINK, lineStyle: 'dotted', label: 'Cross-grade link' },
+  { kind: 'border', color: COLOR_ACCENT_PASS, lineStyle: 'solid', label: 'Passed' },
+  { kind: 'border', color: COLOR_ACCENT_FAIL, lineStyle: 'solid', label: 'Failed' },
+  { kind: 'border', color: COLOR_ACCENT_IMPROVE, lineStyle: 'dashed', label: 'Unattempted' },
+];
 
 function statusLabel(baseLabel, studentId, status) {
   if (!studentId) return baseLabel;
@@ -472,6 +486,7 @@ export default function SubjectSkillGraph({
           ? ' Skills marked ❌ for the tracked student auto-drill into their sub-skills; 🔗 badges jump to a related skill in another grade.'
           : ' Track a student on the left to see pass/fail badges and auto-diagnostic drill-downs.'}
       </p>
+      <GraphLegend items={SUBJECT_SKILL_GRAPH_LEGEND} />
       <InfoCard node={activeLeaf} />
     </div>
   );

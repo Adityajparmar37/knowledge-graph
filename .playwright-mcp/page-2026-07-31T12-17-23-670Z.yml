@@ -1,0 +1,89 @@
+- generic [ref=f2e3]:
+  - banner [ref=f2e4]:
+    - heading "Standards & Skills Explorer" [level=1] [ref=f2e5]
+    - paragraph [ref=f2e6]: Pick a standard, click through its breakdown, and drill into a subject's skills to see worked examples and pass criteria. Track a student to see live pass/fail status and auto-diagnostic drill-downs on failed skills.
+    - generic [ref=f2e7]:
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]: Search by code or description
+        - textbox "Search by code or description" [ref=f2e10]:
+          - /placeholder: e.g. NY-7.EE.1
+      - generic [ref=f2e11]:
+        - generic [ref=f2e12]: State
+        - combobox "State" [ref=f2e13]:
+          - option "All states" [selected]
+          - option "California"
+          - option "New York"
+      - generic [ref=f2e14]:
+        - generic [ref=f2e15]: Grade
+        - combobox "Grade" [ref=f2e16]:
+          - option "All grades" [selected]
+          - option "Grade 5"
+          - option "Grade 6"
+          - option "Grade 7"
+          - option "Grade 8"
+          - option "Grade 9"
+          - option "Grade 10"
+      - generic [ref=f2e17]:
+        - generic [ref=f2e18]: Standard
+        - combobox "Standard" [ref=f2e19]:
+          - option "Choose a standard"
+          - option "NY-5.NF.1"
+          - option "NY-6.NS.1"
+          - option "NY-7.EE.1" [selected]
+          - option "NY-7.G.1"
+          - option "NY-8.EE.3"
+          - option "NY-8.G.1"
+          - option "NY-9.NQ.1"
+          - option "NY-9.SP.1"
+          - option "NY-10.F.1"
+          - option "CA-5.NF.1"
+          - option "CA-6.NS.1"
+          - option "CA-7.EE.1"
+          - option "CA-7.G.1"
+          - option "CA-8.EE.3"
+          - option "CA-8.G.1"
+          - option "CA-9.NQ.1"
+          - option "CA-9.SP.1"
+          - option "CA-10.F.1"
+      - generic [ref=f2e20]:
+        - generic [ref=f2e21]: Track a student
+        - list [ref=f2e22]:
+          - listitem [ref=f2e23]:
+            - button "None" [ref=f2e24] [cursor=pointer]
+          - listitem [ref=f2e25]:
+            - button "Alex Rivera" [ref=f2e26] [cursor=pointer]
+          - listitem [ref=f2e27]:
+            - button "Priya Nair" [ref=f2e28] [cursor=pointer]
+          - listitem [ref=f2e29]:
+            - button "Sam Okafor" [ref=f2e30] [cursor=pointer]
+    - generic [ref=f2e40]:
+      - generic [ref=f2e41]: NY-7.EE.1
+      - generic [ref=f2e42]: Apply properties of operations as strategies to add, subtract, factor, and expand linear expressions with rational coefficients, and recognize the connection between equivalent expressions and proportional relationships.
+  - generic [ref=f2e31]:
+    - generic [ref=f2e32]:
+      - heading "Standard Breakdown" [level=2] [ref=f2e34]
+      - generic [ref=f2e35]:
+        - generic [ref=f2e50]:
+          - button "Zoom in" [ref=f2e51] [cursor=pointer]: +
+          - button "Zoom out" [ref=f2e52] [cursor=pointer]: −
+          - button "Reset zoom and fit" [ref=f2e53] [cursor=pointer]: ⤢
+          - button "Rotate graph 90 degrees" [ref=f2e54] [cursor=pointer]: ⟳
+        - paragraph [ref=f2e55]: Click the standard to reveal its subjects, then click "Subjects" to fan them out and see what this standard builds toward. Click a subject to explore its skills on the right.
+        - list [ref=f2e56]:
+          - listitem [ref=f2e57]:
+            - generic [ref=f2e59]: Standard
+          - listitem [ref=f2e60]:
+            - generic [ref=f2e62]: Subject
+          - listitem [ref=f2e63]:
+            - generic [ref=f2e65]: Structure
+          - listitem [ref=f2e66]:
+            - generic [ref=f2e68]: Builds toward next standard
+          - listitem [ref=f2e69]:
+            - generic [ref=f2e71]: Passed (tracked student)
+          - listitem [ref=f2e72]:
+            - generic [ref=f2e74]: Failed (tracked student)
+          - listitem [ref=f2e75]:
+            - generic [ref=f2e77]: Unattempted
+    - generic [ref=f2e36]:
+      - heading "Subject Detail" [level=2] [ref=f2e38]
+      - generic [ref=f2e39]: Click a subject in the middle panel to see its skill tree.

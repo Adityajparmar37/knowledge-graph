@@ -10,6 +10,7 @@ import { getSkillOwner } from './lib/traverse.js';
 export default function App() {
   const [selectedStandardId, setSelectedStandardId] = useState(null);
   const [stateFilter, setStateFilter] = useState('all');
+  const [gradeFilter, setGradeFilter] = useState('all');
 
   const [selectedSubjectId, setSelectedSubjectId] = useState(null);
   const [selectedSubjectName, setSelectedSubjectName] = useState(null);
@@ -32,8 +33,22 @@ export default function App() {
     []
   );
 
+  const grades = useMemo(
+    () => [...new Set(getAllStandards().map((standard) => standard.grade))].sort((a, b) => a - b),
+    []
+  );
+
   const handleStateFilterChange = useCallback((nextState) => {
     setStateFilter(nextState);
+    setSelectedStandardId(null);
+    setSelectedSubjectId(null);
+    setSelectedSubjectName(null);
+    setFocusSubjectId(null);
+    setFocusSkillId(null);
+  }, []);
+
+  const handleGradeFilterChange = useCallback((nextGrade) => {
+    setGradeFilter(nextGrade);
     setSelectedStandardId(null);
     setSelectedSubjectId(null);
     setSelectedSubjectName(null);
@@ -104,6 +119,7 @@ export default function App() {
               selectedId={selectedStandardId}
               onSelect={handleSelectStandard}
               state={stateFilter}
+              grade={gradeFilter}
             />
 
             <div className="standard-state-field">
@@ -125,10 +141,34 @@ export default function App() {
               </select>
             </div>
 
+            <div className="standard-grade-field">
+              <label className="field-label" htmlFor="standard-grade">
+                Grade
+              </label>
+              <select
+                id="standard-grade"
+                className="standard-grade-select"
+                value={gradeFilter}
+                onChange={(evt) =>
+                  handleGradeFilterChange(
+                    evt.target.value === 'all' ? 'all' : Number(evt.target.value)
+                  )
+                }
+              >
+                <option value="all">All grades</option>
+                {grades.map((grade) => (
+                  <option key={grade} value={grade}>
+                    Grade {grade}
+                  </option>
+                ))}
+              </select>
+            </div>
+
             <StandardPicker
               selectedId={selectedStandardId}
               onSelect={handleSelectStandard}
               state={stateFilter}
+              grade={gradeFilter}
             />
 
             <StudentSelector selectedId={selectedStudentId} onSelect={handleSelectStudent} />
