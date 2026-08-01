@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import cytoscape from 'cytoscape';
 import dagre from 'cytoscape-dagre';
-import studentsData from '../data/students.json';
+import { getSavedStudents, saveStudent } from '../lib/students.js';
 import GraphLegend from './GraphLegend.jsx';
 import { getAllStandards, gradeLabel } from '../lib/graphStore.js';
 import {
@@ -129,19 +129,21 @@ function buildElements(path, studentId, expandedIds) {
  */
 export default function DiagnosePage({ onBack }) {
   const [studentName, setStudentName] = useState('');
+  const [saveThisStudent, setSaveThisStudent] = useState(true);
   const [standardQuery, setStandardQuery] = useState('');
   const [standardId, setStandardId] = useState(null);
   const [skillId, setSkillId] = useState(null);
   const [path, setPath] = useState(null);
   const [overrideVersion, setOverrideVersion] = useState(0);
   const [expandedIds, setExpandedIds] = useState(() => new Set());
+  const savedStudents = useMemo(() => getSavedStudents(), [overrideVersion]);
 
   const studentId = useMemo(() => {
     const trimmed = studentName.trim();
     if (!trimmed) return null;
-    const known = studentsData.find((s) => s.name.toLowerCase() === trimmed.toLowerCase());
+    const known = savedStudents.find((s) => s.name.toLowerCase() === trimmed.toLowerCase());
     return known ? known.id : `student-custom-${slugify(trimmed)}`;
-  }, [studentName]);
+  }, [studentName, savedStudents]);
 
   const containerRef = useRef(null);
   const cyRef = useRef(null);
@@ -162,6 +164,9 @@ export default function DiagnosePage({ onBack }) {
 
   const handleSubmit = () => {
     if (!canSubmit) return;
+    if (saveThisStudent) {
+      saveStudent({ id: studentId, name: studentName.trim() });
+    }
     setSkillStatusOverride(studentId, skillId, 'fail');
     setOverrideVersion((v) => v + 1);
     setExpandedIds(new Set());
@@ -335,18 +340,28 @@ export default function DiagnosePage({ onBack }) {
             onChange={(evt) => setStudentName(evt.target.value)}
             placeholder="Type any student's name — e.g. Jordan Lee"
           />
-          <div className="standard-quick-list" style={{ marginTop: 6, display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-            {studentsData.map((student) => (
-              <button
-                key={student.id}
-                type="button"
-                className={`standard-chip${studentName === student.name ? ' is-active' : ''}`}
-                onClick={() => setStudentName(student.name)}
-              >
-                {student.name}
-              </button>
-            ))}
-          </div>
+          {savedStudents.length > 0 && (
+            <div className="standard-quick-list" style={{ marginTop: 6, display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+              {savedStudents.map((student) => (
+                <button
+                  key={student.id}
+                  type="button"
+                  className={`standard-chip${studentName === student.name ? ' is-active' : ''}`}
+                  onClick={() => setStudentName(student.name)}
+                >
+                  {student.name}
+                </button>
+              ))}
+            </div>
+          )}
+          <label className="diagnose-save-toggle" style={{ marginTop: 8, display: 'flex', alignItems: 'center', gap: 6 }}>
+            <input
+              type="checkbox"
+              checked={saveThisStudent}
+              onChange={(evt) => setSaveThisStudent(evt.target.checked)}
+            />
+            Save this student for next time
+          </label>
         </div>
 
         <div className="diagnose-field">

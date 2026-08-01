@@ -1,4 +1,4 @@
-import studentsData from '../data/students.json';
+import { getSavedStudents } from '../lib/students.js';
 
 /**
  * Compact chip-list picker for the active student, mirroring the visual
@@ -11,6 +11,7 @@ import studentsData from '../data/students.json';
  * @param {(id: string|null) => void} props.onSelect
  */
 export default function StudentSelector({ selectedId, onSelect }) {
+  const studentsData = getSavedStudents();
   return (
     <div className="student-selector">
       <span className="field-label">Track a student</span>
