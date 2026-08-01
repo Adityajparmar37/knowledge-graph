@@ -165,12 +165,23 @@ export default function DiagnosePage({ onBack }) {
   const handleSubmit = () => {
     if (!canSubmit) return;
     if (saveThisStudent) {
-      saveStudent({ id: studentId, name: studentName.trim() });
+      saveStudent({ id: studentId, name: studentName.trim(), lastSkillId: skillId });
     }
     setSkillStatusOverride(studentId, skillId, 'fail');
     setOverrideVersion((v) => v + 1);
     setExpandedIds(new Set());
     setPath(getRemediationPath(skillId));
+  };
+
+  // Clicking a saved student in the quick-list loads their graph straight
+  // away (their last-diagnosed skill's backtrack path) instead of just
+  // filling the name field.
+  const handleQuickSelectStudent = (student) => {
+    setStudentName(student.name);
+    if (!student.lastSkillId) return;
+    setSkillId(student.lastSkillId);
+    setExpandedIds(new Set());
+    setPath(getRemediationPath(student.lastSkillId));
   };
 
   useEffect(() => {
@@ -347,7 +358,7 @@ export default function DiagnosePage({ onBack }) {
                   key={student.id}
                   type="button"
                   className={`standard-chip${studentName === student.name ? ' is-active' : ''}`}
-                  onClick={() => setStudentName(student.name)}
+                  onClick={() => handleQuickSelectStudent(student)}
                 >
                   {student.name}
                 </button>
